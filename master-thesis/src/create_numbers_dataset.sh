@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if [ ! -d "../data/numbers" ]; then
     mkdir ../data/numbers

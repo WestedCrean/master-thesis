@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # download the dataset
 wget -O phcd.rar https://cs.pollub.pl/phcd/phcd.rar 
