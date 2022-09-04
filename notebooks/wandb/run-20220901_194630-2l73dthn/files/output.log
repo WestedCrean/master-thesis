@@ -1,0 +1,19 @@
+
+../../data/numbers
+/home/wiktor/.pyenv/versions/3.10.5/envs/master-thesis/lib/python3.10/site-packages/tqdm/auto.py:22: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+[]
+[]
+[Path('../../data/numbers/5')]
+[]
+[]
+../../data/numbers/4
+../../data/numbers/7
+../../data/numbers/9
+../../data/numbers/5
+../../data/numbers/8
+../../data/numbers/0
+../../data/numbers/2
+../../data/numbers/1
+../../data/numbers/6
+../../data/numbers/3

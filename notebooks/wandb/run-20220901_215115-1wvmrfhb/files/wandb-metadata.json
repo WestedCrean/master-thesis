@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.5",
+    "heartbeatAt": "2022-09-01T19:51:22.995882",
+    "startedAt": "2022-09-01T19:51:15.625759",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": null,
+        "commit": null
+    },
+    "email": "wiktor.flis@soprasteria.com",
+    "root": "/home/wiktor/master",
+    "host": "ITEM-S127495",
+    "username": "wiktor",
+    "executable": "/home/wiktor/.pyenv/versions/3.10.5/envs/master-thesis/bin/python"
+}

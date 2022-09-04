@@ -1,0 +1,4 @@
+data/*
+*.rar
+# python
+*.pyc
