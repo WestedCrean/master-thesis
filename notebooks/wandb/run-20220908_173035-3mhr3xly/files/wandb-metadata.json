@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.15.0-39-generic-x86_64-with-glibc2.35",
+    "python": "3.9.10",
+    "heartbeatAt": "2022-09-08T15:30:36.168269",
+    "startedAt": "2022-09-08T15:30:35.209315",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 SUPER",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "notebooks/fastai_train_numbers-jvsc-d9c86ea9-1d82-474e-9432-8f9080cc3c1ed4a82250-8cea-4569-bdb4-2219e1db4deb.ipynb",
+    "root": "/home/wiktor/code/master-thesis",
+    "git": {
+        "remote": "https://github.com/WestedCrean/master-thesis.git",
+        "commit": "de3e65e236a404f4beecb0c598816888b465734c"
+    },
+    "email": "wikflis@gmail.com",
+    "host": "wiktor-on-linux",
+    "username": "wiktor",
+    "executable": "/home/wiktor/.pyenv/versions/3.9.10/envs/master-thesis/bin/python"
+}

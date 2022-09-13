@@ -1,0 +1,131 @@
+/home/wiktor/.pyenv/versions/3.9.10/envs/master-thesis/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/wiktor/.pyenv/versions/3.9.10/envs/master-thesis/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ResNet18_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet18_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth" to /home/wiktor/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth
+Predicted label: 0, Actual label: 0
+Probability: 1.0000
+Predicted label: 0, Actual label: 0
+Probability: 0.9999
+Predicted label: 1, Actual label: 1
+Probability: 0.9934
+Predicted label: 0, Actual label: 0
+Probability: 0.9998
+Predicted label: 7, Actual label: 7
+Probability: 0.9999
+Predicted label: 7, Actual label: 7
+Probability: 0.9988
+Predicted label: 3, Actual label: 3
+Probability: 0.9986
+Predicted label: 6, Actual label: 6
+Probability: 0.9999
+Predicted: 3, Actual: 0 with probability: 0.0000
+../data/numbers/1/1_0955_97_M_2F.png
+Predicted: 1, Actual: 1 with probability: 1.0000
+../data/numbers/9/9_1350_97_K_2F.png
+Predicted: 9, Actual: 2 with probability: 0.0000
+../data/numbers/2/2_1403_95_M_2E.png
+Predicted: 2, Actual: 3 with probability: 0.0000
+../data/numbers/6/6_2796_97_K_2G.png
+Predicted: 6, Actual: 4 with probability: 0.0001
+../data/numbers/8/8_1507_98_M_2G.png
+Predicted: 8, Actual: 5 with probability: 0.0001
+../data/numbers/0/0_0753_98_M_2B.png
+Predicted: 0, Actual: 6 with probability: 0.0000
+../data/numbers/1/1_1676_98_K_2E.png
+Predicted: 1, Actual: 7 with probability: 0.0000
+../data/numbers/5/5_1505_98_K_2G.png
+Predicted: 5, Actual: 8 with probability: 0.0000
+../data/numbers/8/8_2304_96_K_2D.png
+Predicted: 2, Actual: 2 with probability: 0.0000
+../data/numbers/2/2_1381_98_M_2B.png
+Predicted: 6, Actual: 6 with probability: 0.0000
+../data/numbers/6/6_2686_97_M_2F.png
+Predicted: 0, Actual: 0 with probability: 0.0000
+../data/numbers/0/0_0363_99_K_2D.png
+Predicted: 6, Actual: 6 with probability: 0.0001
+../data/numbers/6/6_1047_95_M_2E.png
+Predicted: 0, Actual: 0 with probability: 0.0000
+../data/numbers/0/0_1341_96_M_2B.png
+Predicted: 1, Actual: 1 with probability: 0.0000
+../data/numbers/1/1_2531_95_K_2E.png
+Predicted: 4, Actual: 4 with probability: 0.0000
+../data/numbers/4/4_2858_97_K_2G.png
+Predicted: 1, Actual: 1 with probability: 0.0001
+../data/numbers/1/1_2598_01_M_2F.png
+Predicted: 3, Actual: 3 with probability: 0.0001
+../data/numbers/3/3_2536_95_K_2E.png
+Predicted label: 1, Actual label: 1
+Probability: 0.9998
+Predicted: 5, Actual: 5 with probability: 0.9983
+../data/numbers/5/5_1725_01_M_2E.png
+Predicted: 9, Actual: 9 with probability: 0.9976
+../data/numbers/9/9_2335_97_M_2B.png
+Predicted: 4, Actual: 4 with probability: 1.0000
+../data/numbers/4/4_0123_99_K_2F.png
+Predicted: 7, Actual: 7 with probability: 0.9924
+../data/numbers/7/7_2824_90_M_2B.png
+Predicted: 5, Actual: 5 with probability: 0.9997
+../data/numbers/5/5_1528_96_M_2E.png
+Predicted: 2, Actual: 2 with probability: 0.9993
+../data/numbers/2/2_0057_98_K_2F.png
+Predicted: 2, Actual: 2 with probability: 1.0000
+../data/numbers/2/2_1319_99_M_2B.png
+Predicted: 2, Actual: 2 with probability: 0.9999
+../data/numbers/2/2_0272_99_M_2F.png
+Predicted: 0, Actual: 0 with probability: 0.9998
+../data/numbers/0/0_2547_00_M_2D.png
+Predicted: 8, Actual: 8 with probability: 1.0000
+../data/numbers/8/8_1956_97_M_2G.png
+Predicted: 0, Actual: 0 with probability: 1.0000
+../data/numbers/0/0_1352_98_M_2B.png
+Predicted: 8, Actual: 8 with probability: 0.9994
+../data/numbers/8/8_2587_01_K_2D.png
+Predicted: 3, Actual: 3 with probability: 0.9999
+../data/numbers/3/3_3382_98_M_2B.png
+Predicted: 5, Actual: 5 with probability: 0.9999
+../data/numbers/5/5_1548_97_K_2E.png
+Predicted: 1, Actual: 1 with probability: 0.9999
+../data/numbers/1/1_2007_99_K_2E.png
+Predicted: 1, Actual: 1 with probability: 0.9997
+../data/numbers/1/1_0999_19-06-06_1998_K_2F.png
+Predicted: 8, Actual: 8 with probability: 1.0000
+../data/numbers/8/8_1573_95_M_2B.png
+Predicted: 1, Actual: 1 with probability: 1.0000
+../data/numbers/1/1_0469_99_K_2F.png
+Predicted: 0, Actual: 0 with probability: 1.0000
+../data/numbers/0/0_3135_95_K_2D.png
+Predicted: 9, Actual: 9 with probability: 0.9986
+../data/numbers/9/9_0370_98_M_2B.png
+Predicted: 5, Actual: 5 with probability: 0.9998
+../data/numbers/5/5_3239_94_M_2D.png
+Predicted: 0, Actual: 0 with probability: 1.0000
+../data/numbers/0/0_1013_99_M_2С.png
+Predicted: 2, Actual: 2 with probability: 0.9996
+../data/numbers/2/2_1362_97_M_2F.png
+Predicted: 6, Actual: 6 with probability: 0.9517
+../data/numbers/6/6_2639_98_M_2F.png
+Predicted: 2, Actual: 2 with probability: 1.0000
+../data/numbers/2/2_0329_96_M_2F.png
+Predicted: 1, Actual: 1 with probability: 0.9999
+../data/numbers/1/1_3000_96_M_2H.png
+Predicted: 6, Actual: 6 with probability: 0.9999
+../data/numbers/6/6_2063_00_M_2B.png
+Predicted: 7, Actual: 7 with probability: 0.9993
+../data/numbers/7/7_1678_99_M_2E.png
+Predicted: 2, Actual: 2 with probability: 1.0000
+../data/numbers/2/2_2195_96_M_2B.png
+Predicted: 1, Actual: 1 with probability: 0.9994
+../data/numbers/1/1_2844_92_M_2B.png
+Predicted: 7, Actual: 7 with probability: 0.9997
+../data/numbers/7/7_0893_99_M_2E.png
+Predicted: 6, Actual: 6 with probability: 1.0000
+../data/numbers/6/6_1821_99_M_2B.png
+Predicted: 8, Actual: 8 with probability: 0.9996
+../data/numbers/8/8_1475_96_M_2C.png
+Predicted: 2, Actual: 2 with probability: 0.9998
+../data/numbers/2/2_0795_97_K_2E.png
+Predicted: 4, Actual: 4 with probability: 1.0000
+../data/numbers/4/4_1598_98_M_2E.png
+Predicted: 9, Actual: 9 with probability: 0.9998
+../data/numbers/9/9_1415_96_K_2C.png

@@ -1,0 +1,351 @@
+2022-09-05 19:31:02,477 INFO    StreamThr :53675 [internal.py:wandb_internal():90] W&B internal server running at pid: 53675, started at: 2022-09-05 19:31:02.477180
+2022-09-05 19:31:02,479 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: status
+2022-09-05 19:31:02,480 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: status
+2022-09-05 19:31:02,491 DEBUG   SenderThread:53675 [sender.py:send():302] send: header
+2022-09-05 19:31:02,491 INFO    WriterThread:53675 [datastore.py:open_for_write():75] open: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/run-esb2de9m.wandb
+2022-09-05 19:31:02,504 DEBUG   SenderThread:53675 [sender.py:send():302] send: run
+2022-09-05 19:31:03,815 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: check_version
+2022-09-05 19:31:03,817 INFO    SenderThread:53675 [dir_watcher.py:__init__():216] watching files in: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files
+2022-09-05 19:31:03,817 INFO    SenderThread:53675 [sender.py:_start_run_threads():913] run started: esb2de9m with start time 1662399062.472726
+2022-09-05 19:31:03,817 DEBUG   SenderThread:53675 [sender.py:send():302] send: summary
+2022-09-05 19:31:03,817 INFO    SenderThread:53675 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-05 19:31:03,818 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: check_version
+2022-09-05 19:31:04,003 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: run_start
+2022-09-05 19:31:04,007 DEBUG   HandlerThread:53675 [meta.py:__init__():35] meta init
+2022-09-05 19:31:04,008 DEBUG   HandlerThread:53675 [meta.py:__init__():50] meta init done
+2022-09-05 19:31:04,008 DEBUG   HandlerThread:53675 [meta.py:probe():216] probe
+2022-09-05 19:31:04,014 DEBUG   HandlerThread:53675 [meta.py:_setup_git():206] setup git
+2022-09-05 19:31:04,025 DEBUG   HandlerThread:53675 [meta.py:_setup_git():213] setup git done
+2022-09-05 19:31:04,026 DEBUG   HandlerThread:53675 [meta.py:_save_pip():54] save pip
+2022-09-05 19:31:04,026 DEBUG   HandlerThread:53675 [meta.py:_save_pip():68] save pip done
+2022-09-05 19:31:04,026 DEBUG   HandlerThread:53675 [meta.py:probe():254] probe done
+2022-09-05 19:31:04,028 DEBUG   SenderThread:53675 [sender.py:send():302] send: files
+2022-09-05 19:31:04,028 INFO    SenderThread:53675 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-09-05 19:31:04,037 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:31:04,037 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:31:04,042 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:31:04,042 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:31:04,143 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:31:04,143 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:31:04,383 DEBUG   SenderThread:53675 [sender.py:send():302] send: telemetry
+2022-09-05 19:31:04,383 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:31:04,521 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:31:04,521 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:31:04,560 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:31:04,819 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/requirements.txt
+2022-09-05 19:31:04,820 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-summary.json
+2022-09-05 19:31:04,820 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-metadata.json
+2022-09-05 19:31:04,827 INFO    Thread-16 :53675 [upload_job.py:push():138] Uploaded file /tmp/tmp9hk3hpfgwandb/k5e5o6br-wandb-metadata.json
+2022-09-05 19:31:06,909 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:31:06,909 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:31:11,259 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:31:11,259 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:31:11,360 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:31:14,468 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:31:14,469 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:31:14,821 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:31:16,821 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:31:19,385 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:31:19,386 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:31:33,825 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/config.yaml
+2022-09-05 19:31:35,398 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:31:35,398 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:31:42,687 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:31:50,712 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:31:50,712 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:32:06,035 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:32:06,035 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:32:12,951 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:32:21,332 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:32:21,332 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:32:36,632 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:32:36,632 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:32:43,158 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:32:51,936 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:32:51,936 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:33:07,252 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:33:07,252 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:33:13,409 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:22,584 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:33:22,585 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:33:37,917 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:33:37,917 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:33:39,315 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:39,315 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:39,333 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:39,352 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:39,352 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:39,457 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:39,457 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:39,476 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:41,858 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:33:44,720 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:44,720 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:44,841 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:44,841 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:44,938 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:45,509 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:45,509 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:45,711 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:45,711 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:45,731 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:45,859 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:33:46,172 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:46,173 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:46,277 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:46,277 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:46,293 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:46,744 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:46,744 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:46,840 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:46,840 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:46,863 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:47,229 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:47,229 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:47,333 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:47,334 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:47,346 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:47,828 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:47,828 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:47,860 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:33:47,932 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:47,933 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:47,945 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:49,860 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:33:51,041 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:33:51,041 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:33:51,149 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:33:51,149 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:33:51,161 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:33:51,861 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:33:53,212 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:33:53,212 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:34:08,540 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:34:08,540 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:34:23,858 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:34:23,859 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:34:39,177 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:34:39,177 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:34:54,497 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:34:54,498 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:35:09,818 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:35:09,818 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:35:25,154 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:35:25,154 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:35:40,487 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:35:40,487 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:35:55,815 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:35:55,815 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:36:11,139 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:36:11,139 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:36:26,460 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:36:26,461 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:36:41,803 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:36:41,803 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:36:57,147 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:36:57,147 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:37:01,768 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:37:01,768 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:37:02,463 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:37:02,463 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:37:02,486 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:37:12,478 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:37:12,478 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:37:18,729 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:37:18,729 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:37:19,273 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:37:19,273 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:37:19,352 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:37:27,777 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:37:27,777 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:37:43,104 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:37:43,104 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:37:58,428 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:37:58,428 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:38:13,751 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:38:13,751 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:38:17,357 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:38:17,357 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:38:17,929 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:38:18,042 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:38:18,043 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:38:18,078 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:38:19,929 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:38:29,073 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:38:29,073 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:38:44,399 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:38:44,400 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:38:55,984 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:38:55,984 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:38:56,695 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:38:56,696 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:38:56,707 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:38:57,940 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:38:59,724 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:38:59,724 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:39:15,019 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:39:15,019 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:39:27,031 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:39:27,031 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:39:27,152 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:39:27,152 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:39:27,250 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:39:27,948 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:39:30,300 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:39:30,301 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:39:45,700 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:39:45,700 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:39:46,588 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:39:46,588 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:39:47,265 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:39:47,265 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:39:47,310 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:39:47,953 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:01,022 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:40:01,023 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:40:07,129 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:40:07,129 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:40:07,817 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:40:07,817 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:40:07,854 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:40:07,959 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:09,959 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:15,841 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:40:15,841 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:40:16,403 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:40:16,403 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:40:16,521 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:40:16,521 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:40:16,735 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:40:17,962 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:26,825 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: resume
+2022-09-05 19:40:26,826 INFO    HandlerThread:53675 [handler.py:handle_request_resume():690] starting system metrics thread
+2022-09-05 19:40:27,349 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: pause
+2022-09-05 19:40:27,349 INFO    HandlerThread:53675 [handler.py:handle_request_pause():699] stopping system metrics thread
+2022-09-05 19:40:27,451 DEBUG   SenderThread:53675 [sender.py:send():302] send: stats
+2022-09-05 19:40:27,964 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:31,737 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-05 19:40:31,737 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: stop_status
+2022-09-05 19:40:46,723 DEBUG   SenderThread:53675 [sender.py:send():302] send: exit
+2022-09-05 19:40:46,723 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:46,723 INFO    SenderThread:53675 [sender.py:send_exit():438] handling exit code: 0
+2022-09-05 19:40:46,723 INFO    SenderThread:53675 [sender.py:send_exit():440] handling runtime: 156
+2022-09-05 19:40:46,726 INFO    SenderThread:53675 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-05 19:40:46,726 INFO    SenderThread:53675 [sender.py:send_exit():446] send defer
+2022-09-05 19:40:46,726 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:46,726 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,726 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 0
+2022-09-05 19:40:46,727 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,727 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-09-05 19:40:46,727 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 1
+2022-09-05 19:40:46,727 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,727 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 1
+2022-09-05 19:40:46,727 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,727 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-09-05 19:40:46,727 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 2
+2022-09-05 19:40:46,727 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,727 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 2
+2022-09-05 19:40:46,728 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 3
+2022-09-05 19:40:46,728 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,728 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 3
+2022-09-05 19:40:46,728 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 4
+2022-09-05 19:40:46,728 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,728 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 4
+2022-09-05 19:40:46,728 DEBUG   SenderThread:53675 [sender.py:send():302] send: summary
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-05 19:40:46,728 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-09-05 19:40:46,728 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 5
+2022-09-05 19:40:46,729 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,729 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 5
+2022-09-05 19:40:46,729 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,729 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-09-05 19:40:46,729 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 6
+2022-09-05 19:40:46,729 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:46,729 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 6
+2022-09-05 19:40:46,729 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:46,729 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-09-05 19:40:46,827 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:46,970 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-summary.json
+2022-09-05 19:40:47,881 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 7
+2022-09-05 19:40:47,881 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:47,882 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:47,882 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 7
+2022-09-05 19:40:47,882 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:47,882 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-09-05 19:40:47,882 INFO    SenderThread:53675 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-05 19:40:47,970 INFO    Thread-12 :53675 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:47,971 INFO    SenderThread:53675 [dir_watcher.py:finish():392] scan: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files
+2022-09-05 19:40:47,971 INFO    SenderThread:53675 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-summary.json wandb-summary.json
+2022-09-05 19:40:47,971 INFO    SenderThread:53675 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/config.yaml config.yaml
+2022-09-05 19:40:47,971 INFO    SenderThread:53675 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log output.log
+2022-09-05 19:40:47,977 INFO    SenderThread:53675 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-metadata.json wandb-metadata.json
+2022-09-05 19:40:47,980 INFO    SenderThread:53675 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/requirements.txt requirements.txt
+2022-09-05 19:40:47,981 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 8
+2022-09-05 19:40:47,984 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:47,984 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 8
+2022-09-05 19:40:47,984 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:47,985 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:47,985 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-09-05 19:40:47,985 INFO    SenderThread:53675 [file_pusher.py:finish():171] shutting down file pusher
+2022-09-05 19:40:47,985 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,086 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,086 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,187 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,187 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,288 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,288 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,389 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,390 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,491 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,491 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,592 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,592 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,693 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,693 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,794 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,794 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,895 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,896 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:48,997 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:48,997 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:49,020 INFO    Thread-39 :53675 [upload_job.py:push():138] Uploaded file /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/output.log
+2022-09-05 19:40:49,027 INFO    Thread-40 :53675 [upload_job.py:push():138] Uploaded file /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/requirements.txt
+2022-09-05 19:40:49,052 INFO    Thread-38 :53675 [upload_job.py:push():138] Uploaded file /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/config.yaml
+2022-09-05 19:40:49,098 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:49,098 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:49,163 INFO    Thread-37 :53675 [upload_job.py:push():138] Uploaded file /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/files/wandb-summary.json
+2022-09-05 19:40:49,199 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:49,199 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:49,300 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:49,300 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:49,364 INFO    Thread-11 :53675 [sender.py:transition_state():459] send defer: 9
+2022-09-05 19:40:49,364 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:49,364 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 9
+2022-09-05 19:40:49,364 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:49,364 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-09-05 19:40:49,401 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-05 19:40:49,845 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 10
+2022-09-05 19:40:49,846 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: poll_exit
+2022-09-05 19:40:49,846 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:49,846 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 10
+2022-09-05 19:40:49,847 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:49,847 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-09-05 19:40:49,847 INFO    SenderThread:53675 [sender.py:transition_state():459] send defer: 11
+2022-09-05 19:40:49,847 DEBUG   SenderThread:53675 [sender.py:send():302] send: final
+2022-09-05 19:40:49,848 DEBUG   SenderThread:53675 [sender.py:send():302] send: footer
+2022-09-05 19:40:49,848 DEBUG   HandlerThread:53675 [handler.py:handle_request():141] handle_request: defer
+2022-09-05 19:40:49,848 INFO    HandlerThread:53675 [handler.py:handle_request_defer():164] handle defer: 11
+2022-09-05 19:40:49,848 DEBUG   SenderThread:53675 [sender.py:send_request():316] send_request: defer
+2022-09-05 19:40:49,848 INFO    SenderThread:53675 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-09-05 19:40:56,069 WARNING StreamThr :53675 [internal.py:is_dead():387] Internal process exiting, parent pid 53483 disappeared
+2022-09-05 19:40:56,069 ERROR   StreamThr :53675 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-09-05 19:40:56,848 INFO    WriterThread:53675 [datastore.py:close():279] close: /home/wiktor/code/master-thesis/notebooks/wandb/run-20220905_193102-esb2de9m/run-esb2de9m.wandb
+2022-09-05 19:40:56,849 INFO    SenderThread:53675 [sender.py:finish():1312] shutting down sender
+2022-09-05 19:40:56,849 INFO    SenderThread:53675 [file_pusher.py:finish():171] shutting down file pusher
+2022-09-05 19:40:56,849 INFO    SenderThread:53675 [file_pusher.py:join():176] waiting for file pusher
+2022-09-05 19:40:56,855 INFO    HandlerThread:53675 [handler.py:finish():810] shutting down handler
