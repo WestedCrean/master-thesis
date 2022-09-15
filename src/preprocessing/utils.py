@@ -7,7 +7,7 @@ import random
 def train_test_split(data: list, test_ratio: float = 0.2):
     return np.split(np.array(data), [int(len(data) * (1 - test_ratio))])
 
-def create_train_test_sets(path: str, target_path: str, test_ratio: float = 0.2):
+def create_train_test_sets(path: str, target_path: str, class_name: str, test_ratio: float = 0.2):
     '''
     Takes a path to a directory containing images and splits them into train and test sets.
 
@@ -34,10 +34,10 @@ def create_train_test_sets(path: str, target_path: str, test_ratio: float = 0.2)
 
 
     # create train and test directories in target_path
-    (target_path / "train").mkdir(parents=True, exist_ok=True)
-    (target_path / "test").mkdir(parents=True, exist_ok=True)
+    (target_path / "train" / class_name).mkdir(parents=True, exist_ok=True)
+    (target_path / "test" / class_name).mkdir(parents=True, exist_ok=True)
     # copy files to train and test directories
     for name in train_filenames:
-        shutil.copy(name, target_path / "train" / name.name)
+        shutil.copy(name, target_path / "train" / class_name / name.name)
     for name in test_filenames:
-        shutil.copy(name, target_path / "test" / name.name)
+        shutil.copy(name, target_path / "test" / class_name / name.name)
