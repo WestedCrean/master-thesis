@@ -1,12 +1,5 @@
-from typing import List
-import yaml
+from typing import List, Tuple
 import tensorflow as tf
-
-import wandb
-from wandb.keras import WandbCallback
-
-from engine import train, test
-from datasets.numbers import numbers
 
 
 def get_convnet_model(
@@ -21,7 +14,7 @@ def get_convnet_model(
     optimizer: tf.keras.optimizers.Optimizer = tf.keras.optimizers.Adam,
     loss: tf.keras.losses.Loss = tf.keras.losses.CategoricalCrossentropy(),
     metrics: list = [tf.keras.metrics.CategoricalAccuracy()],
-) -> tuple(tf.keras.Model, dict):
+) -> Tuple[tf.keras.Model, dict]:
     # Input layer
     inputs = tf.keras.Input(shape=input_shape)
     x = inputs
@@ -49,7 +42,7 @@ def get_convnet_model(
 
     config = dict(
         learning_rate=learning_rate,
-        optimizer=optimizer._name,
+        optimizer=str(optimizer),
         loss=loss.name,
         architecture="CNN",
         entity=model_name,
@@ -62,19 +55,16 @@ def get_models_for_experiment() -> List:
     """
     Create models with different hyperparameters to be trained from scratch
     """
-    models = []
-    possible_cnn_filters = [[32, 64], [64, 128]]
-    for cnn_filters in possible_cnn_filters:
-        cnn_filters = [32, 64]
-        model, config = get_convnet_model(
-            cnn_filters=cnn_filters,
+    models = [
+        get_convnet_model(
+            cnn_filters=[32, 64],
             cnn_kernels=[(3, 3), (3, 3)],
             dense_units=[128],
-            input_shape=(28, 28, 1),
+            input_shape=(32, 32, 3),
             num_classes=10,
             learning_rate=0.001,
             dropout_rate=0.2,
-            model_name=f"CNN_{'_'.join(cnn_filters)}",
+            model_name=f"CNN_test",
         )
-        models.append((model, config))
+    ]
     return models

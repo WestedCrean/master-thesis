@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
-import wandb 
+import wandb
+
 
 def train(
     dataset: tf.data.Dataset,
@@ -14,13 +15,14 @@ def train(
         callbacks=callbacks,
     )
 
+
 def test(
     dataset: tf.data.Dataset,
     model: tf.keras.Model,
 ):
     loss, accuracy = model.evaluate(dataset)
     print(f"Accuracy: {accuracy:.4f}, loss: {loss:.4f}")
-    
+
     # generate y_true and y_pred
     y_true = []
     y_pred = []

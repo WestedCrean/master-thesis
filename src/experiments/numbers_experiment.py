@@ -1,12 +1,14 @@
+import os
+import click
+import logging
+from pathlib import Path
+
 import wandb
 from wandb.keras import WandbCallback
-import tensorflow as tf
-import numpy as np
 
-from src.datasets import numbers
-
-from src.training.engine import train, test
-from src.training.create_models import get_models_for_experiment
+from training.engine import train, test
+from training.create_models import get_models_for_experiment
+from datasets import numbers
 
 
 def run():
@@ -21,7 +23,7 @@ def run():
             train_data,
             model,
             epochs=10,
-            callbacks=[WandbCallback()],
+            # callbacks=[WandbCallback()],
         )
         accuracy, y_true, y_pred = test(test_data, model)
         print({"accuracy": accuracy})
