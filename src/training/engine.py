@@ -17,7 +17,6 @@ def train(
 def test(
     dataset: tf.data.Dataset,
     model: tf.keras.Model,
-    class_names: list,
 ):
     loss, accuracy = model.evaluate(dataset)
     print(f"Accuracy: {accuracy:.4f}, loss: {loss:.4f}")
@@ -34,6 +33,6 @@ def test(
     # return the accuracy and wandb.plot.confusion_matrix
     return (
         accuracy,
-        wandb.plot.confusion_matrix(probs=None, y_true=np.argmax(y_true, axis=1), preds=y_pred, class_names=class_names),
+        y_true,
+        y_pred,
     )
-
