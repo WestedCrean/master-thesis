@@ -1,0 +1,51 @@
+
+Epoch 1/10
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+WARNING:tensorflow:From /home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/tensorflow/python/ops/nn_ops.py:5219: tensor_shape_from_node_def_name (from tensorflow.python.framework.graph_util_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.compat.v1.graph_util.tensor_shape_from_node_def_name`
+Traceback (most recent call last):
+  File "/home/wiktor/master-thesis/src/run_experiment.py", line 21, in <module>
+    main()
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+  File "/home/wiktor/master-thesis/src/run_experiment.py", line 16, in main
+    run()
+  File "/home/wiktor/master-thesis/src/experiments/numbers_experiment.py", line 22, in run
+    history = train(
+  File "/home/wiktor/master-thesis/src/training/engine.py", line 12, in train
+    return model.fit(
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/wandb/integration/keras/keras.py", line 173, in new_v2
+    return old_v2(*args, **kwargs)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/tmp/__autograph_generated_file16bwkvlq.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/training.py", line 1051, in train_function  *
+        return step_function(self, iterator)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/training.py", line 1040, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/training.py", line 1030, in run_step  **
+        outputs = model.train_step(data)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/training.py", line 890, in train_step
+        loss = self.compute_loss(x, y, y_pred, sample_weight)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/training.py", line 948, in compute_loss
+        return self.compiled_loss(
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/engine/compile_utils.py", line 201, in __call__
+        loss_value = loss_obj(y_t, y_p, sample_weight=sw)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/losses.py", line 139, in __call__
+        losses = call_fn(y_true, y_pred)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/losses.py", line 243, in call  **
+        return ag_fn(y_true, y_pred, **self._fn_kwargs)
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/losses.py", line 1787, in categorical_crossentropy
+        return backend.categorical_crossentropy(
+    File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/keras/backend.py", line 5119, in categorical_crossentropy
+        target.shape.assert_is_compatible_with(output.shape)
+    ValueError: Shapes (None, 1) and (None, 10) are incompatible
