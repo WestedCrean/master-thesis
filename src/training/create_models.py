@@ -42,16 +42,13 @@ def get_convnet_model(
 
     config = dict(
         learning_rate=learning_rate,
-        optimizer=str(optimizer),
-        loss=loss.name,
-        architecture="CNN",
-        entity=model_name,
+        model_name=model_name,
     )
 
     return model, config
 
 
-def get_models_for_experiment() -> List:
+def get_models_for_experiment(num_classes=10, input_shape=(32, 32, 3)) -> List:
     """
     Create models with different hyperparameters to be trained from scratch
     """
@@ -60,11 +57,21 @@ def get_models_for_experiment() -> List:
             cnn_filters=[32, 64],
             cnn_kernels=[(3, 3), (3, 3)],
             dense_units=[128],
-            input_shape=(32, 32, 3),
-            num_classes=10,
+            input_shape=input_shape,
+            num_classes=num_classes,
             learning_rate=0.001,
             dropout_rate=0.2,
-            model_name=f"CNN_test",
-        )
+            model_name=f"CNN_1",
+        ),
+        get_convnet_model(
+            cnn_filters=[32, 64, 128],
+            cnn_kernels=[(3, 3), (3, 3), (3, 3)],
+            dense_units=[128 * 2],
+            input_shape=input_shape,
+            num_classes=num_classes,
+            learning_rate=0.0005,
+            dropout_rate=0.3,
+            model_name=f"CNN_2",
+        ),
     ]
     return models

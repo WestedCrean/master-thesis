@@ -1,0 +1,49 @@
+2022-11-02 20:08:16,774 INFO    StreamThr :19773 [internal.py:wandb_internal():88] W&B internal server running at pid: 19773, started at: 2022-11-02 20:08:16.773191
+2022-11-02 20:08:16,782 DEBUG   HandlerThread:19773 [handler.py:handle_request():138] handle_request: status
+2022-11-02 20:08:16,783 DEBUG   SenderThread:19773 [sender.py:send_request():317] send_request: status
+2022-11-02 20:08:16,788 DEBUG   SenderThread:19773 [sender.py:send():303] send: header
+2022-11-02 20:08:16,788 INFO    WriterThread:19773 [datastore.py:open_for_write():75] open: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/run-4tohpphh.wandb
+2022-11-02 20:08:16,788 DEBUG   SenderThread:19773 [sender.py:send():303] send: run
+2022-11-02 20:08:17,385 DEBUG   HandlerThread:19773 [handler.py:handle_request():138] handle_request: check_version
+2022-11-02 20:08:17,389 INFO    SenderThread:19773 [dir_watcher.py:__init__():216] watching files in: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files
+2022-11-02 20:08:17,389 INFO    SenderThread:19773 [sender.py:_start_run_threads():928] run started: 4tohpphh with start time 1667416095.910117
+2022-11-02 20:08:17,389 DEBUG   SenderThread:19773 [sender.py:send():303] send: summary
+2022-11-02 20:08:17,390 INFO    SenderThread:19773 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-02 20:08:17,390 DEBUG   SenderThread:19773 [sender.py:send_request():317] send_request: check_version
+2022-11-02 20:08:17,558 DEBUG   HandlerThread:19773 [handler.py:handle_request():138] handle_request: run_start
+2022-11-02 20:08:17,561 DEBUG   HandlerThread:19773 [meta.py:__init__():34] meta init
+2022-11-02 20:08:17,561 DEBUG   HandlerThread:19773 [meta.py:__init__():49] meta init done
+2022-11-02 20:08:17,561 DEBUG   HandlerThread:19773 [meta.py:probe():215] probe
+2022-11-02 20:08:17,564 DEBUG   HandlerThread:19773 [meta.py:_setup_git():205] setup git
+2022-11-02 20:08:17,574 DEBUG   HandlerThread:19773 [meta.py:_setup_git():212] setup git done
+2022-11-02 20:08:17,575 DEBUG   HandlerThread:19773 [meta.py:_save_pip():53] save pip
+2022-11-02 20:08:17,576 DEBUG   HandlerThread:19773 [meta.py:_save_pip():67] save pip done
+2022-11-02 20:08:17,576 DEBUG   HandlerThread:19773 [meta.py:probe():253] probe done
+2022-11-02 20:08:17,578 DEBUG   SenderThread:19773 [sender.py:send():303] send: files
+2022-11-02 20:08:17,578 INFO    SenderThread:19773 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-02 20:08:17,593 DEBUG   HandlerThread:19773 [handler.py:handle_request():138] handle_request: stop_status
+2022-11-02 20:08:17,594 DEBUG   SenderThread:19773 [sender.py:send_request():317] send_request: stop_status
+2022-11-02 20:08:17,605 DEBUG   HandlerThread:19773 [handler.py:handle_request():138] handle_request: get_summary
+2022-11-02 20:08:17,859 DEBUG   SenderThread:19773 [sender.py:send():303] send: telemetry
+2022-11-02 20:08:17,859 DEBUG   SenderThread:19773 [sender.py:send():303] send: telemetry
+2022-11-02 20:08:17,860 DEBUG   SenderThread:19773 [sender.py:send():303] send: telemetry
+2022-11-02 20:08:17,861 DEBUG   SenderThread:19773 [sender.py:send():303] send: files
+2022-11-02 20:08:17,862 INFO    SenderThread:19773 [sender.py:_save_file():1171] saving file model-best.h5 with policy live
+2022-11-02 20:08:17,862 DEBUG   SenderThread:19773 [sender.py:send():303] send: telemetry
+2022-11-02 20:08:18,343 INFO    Thread-44 :19773 [upload_job.py:push():143] Uploaded file /tmp/tmpl4u3k5erwandb/12sjwff8-wandb-metadata.json
+2022-11-02 20:08:18,394 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/requirements.txt
+2022-11-02 20:08:18,395 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/wandb-metadata.json
+2022-11-02 20:08:18,395 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/wandb-summary.json
+2022-11-02 20:08:18,395 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/output.log
+2022-11-02 20:08:18,908 DEBUG   SenderThread:19773 [sender.py:send():303] send: files
+2022-11-02 20:08:18,909 INFO    SenderThread:19773 [sender.py:_save_file():1171] saving file media/graph/graph_summary_4db46c68be4b26fc5515.graph.json with policy now
+2022-11-02 20:08:18,911 DEBUG   SenderThread:19773 [sender.py:send():303] send: summary
+2022-11-02 20:08:18,912 INFO    SenderThread:19773 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-02 20:08:19,407 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/wandb-summary.json
+2022-11-02 20:08:19,408 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-02 20:08:19,409 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/media
+2022-11-02 20:08:19,409 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/media/graph
+2022-11-02 20:08:19,704 INFO    Thread-45 :19773 [upload_job.py:push():143] Uploaded file /tmp/tmpl4u3k5erwandb/1eqjcmq6-media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-02 20:08:20,403 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/output.log
+2022-11-02 20:08:20,589 INFO    Thread-46 :19773 [upload_job.py:push():143] Uploaded file /tmp/tmpl4u3k5erwandb/37wvkzl7-media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-02 20:08:22,405 INFO    Thread-40 :19773 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221102_200815-4tohpphh/files/output.log

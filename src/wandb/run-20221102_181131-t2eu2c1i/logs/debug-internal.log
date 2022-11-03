@@ -1,0 +1,153 @@
+2022-11-02 18:11:31,113 INFO    StreamThr :389 [internal.py:wandb_internal():90] W&B internal server running at pid: 389, started at: 2022-11-02 18:11:31.111304
+2022-11-02 18:11:31,118 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: status
+2022-11-02 18:11:31,121 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: status
+2022-11-02 18:11:31,125 DEBUG   SenderThread:389 [sender.py:send():302] send: header
+2022-11-02 18:11:31,125 INFO    WriterThread:389 [datastore.py:open_for_write():75] open: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/run-t2eu2c1i.wandb
+2022-11-02 18:11:31,126 DEBUG   SenderThread:389 [sender.py:send():302] send: run
+2022-11-02 18:11:31,869 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: check_version
+2022-11-02 18:11:31,871 INFO    SenderThread:389 [dir_watcher.py:__init__():216] watching files in: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files
+2022-11-02 18:11:31,872 INFO    SenderThread:389 [sender.py:_start_run_threads():913] run started: t2eu2c1i with start time 1667409091.104067
+2022-11-02 18:11:31,872 DEBUG   SenderThread:389 [sender.py:send():302] send: summary
+2022-11-02 18:11:31,872 INFO    SenderThread:389 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-11-02 18:11:31,873 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: check_version
+2022-11-02 18:11:32,049 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: run_start
+2022-11-02 18:11:32,050 DEBUG   HandlerThread:389 [meta.py:__init__():35] meta init
+2022-11-02 18:11:32,050 DEBUG   HandlerThread:389 [meta.py:__init__():50] meta init done
+2022-11-02 18:11:32,050 DEBUG   HandlerThread:389 [meta.py:probe():216] probe
+2022-11-02 18:11:32,053 DEBUG   HandlerThread:389 [meta.py:_setup_git():206] setup git
+2022-11-02 18:11:32,061 DEBUG   HandlerThread:389 [meta.py:_setup_git():213] setup git done
+2022-11-02 18:11:32,061 DEBUG   HandlerThread:389 [meta.py:_save_pip():54] save pip
+2022-11-02 18:11:32,061 DEBUG   HandlerThread:389 [meta.py:_save_pip():68] save pip done
+2022-11-02 18:11:32,061 DEBUG   HandlerThread:389 [meta.py:probe():254] probe done
+2022-11-02 18:11:32,098 DEBUG   SenderThread:389 [sender.py:send():302] send: files
+2022-11-02 18:11:32,099 INFO    SenderThread:389 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-11-02 18:11:32,109 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: stop_status
+2022-11-02 18:11:32,110 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: stop_status
+2022-11-02 18:11:32,402 DEBUG   SenderThread:389 [sender.py:send():302] send: telemetry
+2022-11-02 18:11:32,403 DEBUG   SenderThread:389 [sender.py:send():302] send: telemetry
+2022-11-02 18:11:32,526 DEBUG   SenderThread:389 [sender.py:send():302] send: telemetry
+2022-11-02 18:11:32,605 DEBUG   SenderThread:389 [sender.py:send():302] send: telemetry
+2022-11-02 18:11:32,606 DEBUG   SenderThread:389 [sender.py:send():302] send: exit
+2022-11-02 18:11:32,606 INFO    SenderThread:389 [sender.py:send_exit():438] handling exit code: 1
+2022-11-02 18:11:32,607 INFO    SenderThread:389 [sender.py:send_exit():440] handling runtime: 0
+2022-11-02 18:11:32,608 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:32,608 INFO    SenderThread:389 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-11-02 18:11:32,608 INFO    SenderThread:389 [sender.py:send_exit():446] send defer
+2022-11-02 18:11:32,608 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:32,609 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,609 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 0
+2022-11-02 18:11:32,610 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,610 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-11-02 18:11:32,610 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 1
+2022-11-02 18:11:32,611 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,611 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 1
+2022-11-02 18:11:32,660 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,661 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-11-02 18:11:32,661 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 2
+2022-11-02 18:11:32,662 DEBUG   SenderThread:389 [sender.py:send():302] send: stats
+2022-11-02 18:11:32,663 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,663 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 2
+2022-11-02 18:11:32,664 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,664 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-11-02 18:11:32,664 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 3
+2022-11-02 18:11:32,665 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,665 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 3
+2022-11-02 18:11:32,665 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,665 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-11-02 18:11:32,665 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 4
+2022-11-02 18:11:32,666 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,667 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 4
+2022-11-02 18:11:32,667 DEBUG   SenderThread:389 [sender.py:send():302] send: summary
+2022-11-02 18:11:32,668 INFO    SenderThread:389 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-11-02 18:11:32,668 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,668 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-11-02 18:11:32,668 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 5
+2022-11-02 18:11:32,668 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:32,669 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 5
+2022-11-02 18:11:32,669 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:32,669 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-11-02 18:11:32,713 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:32,874 INFO    Thread-12 :389 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/wandb-metadata.json
+2022-11-02 18:11:32,874 INFO    Thread-12 :389 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/wandb-summary.json
+2022-11-02 18:11:32,874 INFO    Thread-12 :389 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/requirements.txt
+2022-11-02 18:11:32,883 INFO    Thread-16 :389 [upload_job.py:push():138] Uploaded file /tmp/tmpx_4g7e3hwandb/26601eli-wandb-metadata.json
+2022-11-02 18:11:33,025 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 6
+2022-11-02 18:11:33,026 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:33,028 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:33,028 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 6
+2022-11-02 18:11:33,028 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:33,029 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-11-02 18:11:33,029 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 7
+2022-11-02 18:11:33,030 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:33,030 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 7
+2022-11-02 18:11:33,030 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:33,031 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-11-02 18:11:33,031 INFO    SenderThread:389 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-02 18:11:33,132 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:33,873 INFO    Thread-12 :389 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/config.yaml
+2022-11-02 18:11:33,874 INFO    SenderThread:389 [dir_watcher.py:finish():392] scan: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files
+2022-11-02 18:11:33,875 INFO    SenderThread:389 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/config.yaml config.yaml
+2022-11-02 18:11:33,875 INFO    SenderThread:389 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/wandb-metadata.json wandb-metadata.json
+2022-11-02 18:11:33,875 INFO    SenderThread:389 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/requirements.txt requirements.txt
+2022-11-02 18:11:33,875 INFO    SenderThread:389 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/wandb-summary.json wandb-summary.json
+2022-11-02 18:11:33,875 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 8
+2022-11-02 18:11:33,876 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:33,884 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:33,884 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 8
+2022-11-02 18:11:33,885 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:33,885 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-11-02 18:11:33,885 INFO    SenderThread:389 [file_pusher.py:finish():171] shutting down file pusher
+2022-11-02 18:11:33,994 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:33,995 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,099 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,099 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,204 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,204 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,308 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,309 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,414 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,414 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,518 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,519 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,622 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,623 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,726 INFO    Thread-17 :389 [upload_job.py:push():138] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/config.yaml
+2022-11-02 18:11:34,730 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,731 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,748 INFO    Thread-19 :389 [upload_job.py:push():138] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/wandb-summary.json
+2022-11-02 18:11:34,772 INFO    Thread-18 :389 [upload_job.py:push():138] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/files/requirements.txt
+2022-11-02 18:11:34,835 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,835 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,939 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:34,940 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:34,973 INFO    Thread-11 (_thread_body):389 [sender.py:transition_state():459] send defer: 9
+2022-11-02 18:11:34,974 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:34,974 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 9
+2022-11-02 18:11:34,975 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:34,975 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-11-02 18:11:35,043 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:35,534 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 10
+2022-11-02 18:11:35,534 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:35,535 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:35,535 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 10
+2022-11-02 18:11:35,536 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:35,536 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-11-02 18:11:35,536 INFO    SenderThread:389 [sender.py:transition_state():459] send defer: 11
+2022-11-02 18:11:35,538 DEBUG   SenderThread:389 [sender.py:send():302] send: final
+2022-11-02 18:11:35,539 DEBUG   SenderThread:389 [sender.py:send():302] send: footer
+2022-11-02 18:11:35,540 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: defer
+2022-11-02 18:11:35,540 INFO    HandlerThread:389 [handler.py:handle_request_defer():164] handle defer: 11
+2022-11-02 18:11:35,541 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: defer
+2022-11-02 18:11:35,541 INFO    SenderThread:389 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-11-02 18:11:35,643 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: poll_exit
+2022-11-02 18:11:35,644 DEBUG   SenderThread:389 [sender.py:send_request():316] send_request: poll_exit
+2022-11-02 18:11:35,644 INFO    SenderThread:389 [file_pusher.py:join():176] waiting for file pusher
+2022-11-02 18:11:36,294 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: sampled_history
+2022-11-02 18:11:36,297 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: get_summary
+2022-11-02 18:11:36,299 DEBUG   HandlerThread:389 [handler.py:handle_request():141] handle_request: shutdown
+2022-11-02 18:11:36,299 INFO    HandlerThread:389 [handler.py:finish():810] shutting down handler
+2022-11-02 18:11:36,540 INFO    WriterThread:389 [datastore.py:close():279] close: /home/wiktor/master-thesis/src/wandb/run-20221102_181131-t2eu2c1i/run-t2eu2c1i.wandb
+2022-11-02 18:11:37,190 INFO    SenderThread:389 [sender.py:finish():1312] shutting down sender
+2022-11-02 18:11:37,190 INFO    SenderThread:389 [file_pusher.py:finish():171] shutting down file pusher
+2022-11-02 18:11:37,190 INFO    SenderThread:389 [file_pusher.py:join():176] waiting for file pusher
+2022-11-02 18:11:38,306 INFO    MainThread:389 [internal.py:handle_exit():80] Internal process exited
