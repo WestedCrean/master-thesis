@@ -1,0 +1,25 @@
+{
+    "os": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.10.5",
+    "heartbeatAt": "2022-11-05T13:00:11.851044",
+    "startedAt": "2022-11-05T13:00:11.099726",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "run-experiment",
+        "numbers"
+    ],
+    "state": "running",
+    "program": "/home/wiktor/master-thesis/src/run_experiment.py",
+    "codePath": "src/run_experiment.py",
+    "git": {
+        "remote": "https://github.com/WestedCrean/master-thesis.git",
+        "commit": "9e6e81a4a738dc6ff6f4a4df706df2a4eb028f13"
+    },
+    "email": "wikflis@gmail.com",
+    "root": "/home/wiktor/master-thesis",
+    "host": "ITEM-S127495",
+    "username": "wiktor",
+    "executable": "/home/wiktor/.pyenv/versions/master-thesis/bin/python"
+}

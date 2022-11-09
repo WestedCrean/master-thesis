@@ -1,0 +1,89 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.4
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.10.5
+    start_time: 1667653223.067753
+    t:
+      1:
+      - 2
+      - 3
+      - 5
+      - 51
+      - 53
+      - 55
+      2:
+      - 2
+      - 3
+      - 5
+      - 51
+      - 53
+      - 55
+      3:
+      - 2
+      - 3
+      - 8
+      - 13
+      - 16
+      - 23
+      4: 3.10.5
+      5: 0.13.4
+      8:
+      - 2
+      - 5
+      10:
+      - 5
+      - 9
+    visualize:
+      accuracy:
+        panel_config:
+          fieldSettings:
+            stroke: null
+            x: x
+            y: y
+          panelDefId: wandb/line/v0
+          stringSettings:
+            title: Accuracy History
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - fields: []
+                name: id
+              - fields: []
+                name: name
+              - fields: []
+                name: _defaultColorIndex
+              - args:
+                - name: tableKey
+                  value: accuracy_table
+                fields: []
+                name: summaryTable
+              name: runSets
+        panel_type: Vega2
+    viz:
+      confusion_matrix:
+        historyFieldSettings:
+          key: confusion_matrix
+          x-axis: _step
+        id: wandb/confusion_matrix/v1
+      roc:
+        historyFieldSettings:
+          key: roc
+          x-axis: _step
+        id: wandb/roc/v1
+learning_rate:
+  desc: null
+  value: 0.001
+model_name:
+  desc: null
+  value: CNN_32c_64c_128d

@@ -1,0 +1,266 @@
+2022-11-05 13:03:44,390 INFO    StreamThr :14294 [internal.py:wandb_internal():88] W&B internal server running at pid: 14294, started at: 2022-11-05 13:03:44.389468
+2022-11-05 13:03:44,392 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: status
+2022-11-05 13:03:44,392 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: status
+2022-11-05 13:03:44,393 DEBUG   SenderThread:14294 [sender.py:send():303] send: header
+2022-11-05 13:03:44,394 DEBUG   SenderThread:14294 [sender.py:send():303] send: run
+2022-11-05 13:03:44,394 INFO    WriterThread:14294 [datastore.py:open_for_write():75] open: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/run-jxnwebxo.wandb
+2022-11-05 13:03:44,988 INFO    SenderThread:14294 [dir_watcher.py:__init__():216] watching files in: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files
+2022-11-05 13:03:44,988 INFO    SenderThread:14294 [sender.py:_start_run_threads():928] run started: jxnwebxo with start time 1667649823.53345
+2022-11-05 13:03:44,989 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:03:44,989 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: check_version
+2022-11-05 13:03:44,989 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:03:44,990 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: check_version
+2022-11-05 13:03:45,156 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: run_start
+2022-11-05 13:03:45,158 DEBUG   HandlerThread:14294 [meta.py:__init__():34] meta init
+2022-11-05 13:03:45,158 DEBUG   HandlerThread:14294 [meta.py:__init__():49] meta init done
+2022-11-05 13:03:45,158 DEBUG   HandlerThread:14294 [meta.py:probe():215] probe
+2022-11-05 13:03:45,158 DEBUG   HandlerThread:14294 [meta.py:_setup_git():205] setup git
+2022-11-05 13:03:45,162 DEBUG   HandlerThread:14294 [meta.py:_setup_git():212] setup git done
+2022-11-05 13:03:45,162 DEBUG   HandlerThread:14294 [meta.py:_save_pip():53] save pip
+2022-11-05 13:03:45,162 DEBUG   HandlerThread:14294 [meta.py:_save_pip():67] save pip done
+2022-11-05 13:03:45,162 DEBUG   HandlerThread:14294 [meta.py:probe():253] probe done
+2022-11-05 13:03:45,163 DEBUG   SenderThread:14294 [sender.py:send():303] send: files
+2022-11-05 13:03:45,163 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-05 13:03:45,168 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: stop_status
+2022-11-05 13:03:45,169 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 13:03:45,171 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: get_summary
+2022-11-05 13:03:45,426 DEBUG   SenderThread:14294 [sender.py:send():303] send: telemetry
+2022-11-05 13:03:45,426 DEBUG   SenderThread:14294 [sender.py:send():303] send: telemetry
+2022-11-05 13:03:45,426 DEBUG   SenderThread:14294 [sender.py:send():303] send: telemetry
+2022-11-05 13:03:45,427 DEBUG   SenderThread:14294 [sender.py:send():303] send: files
+2022-11-05 13:03:45,427 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file model-best.h5 with policy live
+2022-11-05 13:03:45,427 DEBUG   SenderThread:14294 [sender.py:send():303] send: telemetry
+2022-11-05 13:03:45,546 DEBUG   SenderThread:14294 [sender.py:send():303] send: files
+2022-11-05 13:03:45,547 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file media/graph/graph_summary_4db46c68be4b26fc5515.graph.json with policy now
+2022-11-05 13:03:45,547 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:03:45,552 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:03:45,846 INFO    Thread-38 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/bix4md2i-wandb-metadata.json
+2022-11-05 13:03:45,990 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-05 13:03:45,990 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:45,990 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:03:45,990 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-metadata.json
+2022-11-05 13:03:45,991 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/requirements.txt
+2022-11-05 13:03:45,991 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media
+2022-11-05 13:03:45,991 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/graph
+2022-11-05 13:03:46,222 INFO    Thread-39 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/1l2mavdv-media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-05 13:03:46,955 INFO    Thread-40 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/2ami3dt7-media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-05 13:03:47,989 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:49,991 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:51,991 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:53,992 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:55,993 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:57,994 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:03:59,995 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:00,430 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: stop_status
+2022-11-05 13:04:00,430 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 13:04:01,996 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:03,997 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:04,261 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:04,261 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:04,262 DEBUG   SenderThread:14294 [sender.py:send():303] send: history
+2022-11-05 13:04:04,262 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:04,263 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:04,263 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:04,265 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:04,265 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:04,265 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:04,997 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:04:04,997 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/model-best.h5
+2022-11-05 13:04:05,451 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: log_artifact
+2022-11-05 13:04:05,452 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: log_artifact
+2022-11-05 13:04:05,998 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:07,483 INFO    Thread-41 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/fin1fdxf-model-best.h5
+2022-11-05 13:04:07,497 INFO    Thread-43 :14294 [upload_job.py:push():98] Skipped uploading /home/wiktor/.cache/wandb/artifacts/obj/md5/fe/1c12ac843de929b7a66a72cd415203
+2022-11-05 13:04:07,988 INFO    Thread-46 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/d5/84ef04af4467b31031792ab8725c9b
+2022-11-05 13:04:07,999 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:08,111 INFO    Thread-44 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/a6/91090e335fbe449768cf60d444230c
+2022-11-05 13:04:10,465 INFO    Thread-45 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/fa/4f9893d86e61ed531c48c3b6cff2e0
+2022-11-05 13:04:11,621 INFO    SenderThread:14294 [sender.py:send_request_log_artifact():1222] logged artifact model-CNN_32c_64c_128d - {'id': 'QXJ0aWZhY3Q6MjczODg3Nzc4', 'digest': 'f9f4146ed9ec36f118a5939592e579aa', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0MTU5MDgw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MjczODg3MTQ0', 'versionIndex': 42}}, 'version': 'latest'}
+2022-11-05 13:04:13,280 DEBUG   SenderThread:14294 [sender.py:send():303] send: stats
+2022-11-05 13:04:14,002 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:15,002 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/config.yaml
+2022-11-05 13:04:15,909 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: stop_status
+2022-11-05 13:04:15,910 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 13:04:16,003 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:18,005 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:20,005 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:22,006 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:24,007 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:25,288 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:25,288 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:25,289 DEBUG   SenderThread:14294 [sender.py:send():303] send: history
+2022-11-05 13:04:25,290 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:25,291 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:25,291 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:25,294 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:25,294 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:25,294 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:26,009 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:04:26,009 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:26,009 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/model-best.h5
+2022-11-05 13:04:26,526 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: log_artifact
+2022-11-05 13:04:26,527 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: log_artifact
+2022-11-05 13:04:28,011 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:28,367 INFO    Thread-48 :14294 [upload_job.py:push():98] Skipped uploading /home/wiktor/.cache/wandb/artifacts/obj/md5/fe/1c12ac843de929b7a66a72cd415203
+2022-11-05 13:04:29,096 INFO    Thread-51 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/1a/aa3a709e4ffaf817b7acaf43b38680
+2022-11-05 13:04:29,347 INFO    Thread-49 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/ae/3d58617a91d887291f98cabb8ca394
+2022-11-05 13:04:30,817 INFO    Thread-50 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/36/833df7a6becc1b37c0c6a8f3962d96
+2022-11-05 13:04:31,234 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: stop_status
+2022-11-05 13:04:31,983 INFO    SenderThread:14294 [sender.py:send_request_log_artifact():1222] logged artifact model-CNN_32c_64c_128d - {'id': 'QXJ0aWZhY3Q6MjczODg3ODgy', 'digest': '65e871d9cbe56a8df13149bc1922f42d', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0MTU5MDgw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MjczODg3Nzc4', 'versionIndex': 43}}, 'version': 'latest'}
+2022-11-05 13:04:31,985 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: stop_status
+2022-11-05 13:04:34,014 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:36,014 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:38,015 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:40,016 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:41,474 DEBUG   SenderThread:14294 [sender.py:send():303] send: config
+2022-11-05 13:04:41,745 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: log_artifact
+2022-11-05 13:04:41,746 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: log_artifact
+2022-11-05 13:04:41,753 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:42,017 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:42,017 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table/confusion_matrix_2_580615d474c31f945175.table.json
+2022-11-05 13:04:42,017 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media
+2022-11-05 13:04:42,017 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table
+2022-11-05 13:04:42,068 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: log_artifact
+2022-11-05 13:04:42,081 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: partial_history
+2022-11-05 13:04:42,747 INFO    Thread-52 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/3izja4ou-media/table/confusion_matrix_2_580615d474c31f945175.table.json
+2022-11-05 13:04:43,017 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table/roc_3_65abb580b30c47cff7c0.table.json
+2022-11-05 13:04:43,018 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table
+2022-11-05 13:04:43,099 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: poll_exit
+2022-11-05 13:04:43,481 INFO    Thread-54 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/0a/273b4c34863a39791fa107ccb2ecaf
+2022-11-05 13:04:43,714 INFO    Thread-55 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/1nw7date-media/table/roc_3_65abb580b30c47cff7c0.table.json
+2022-11-05 13:04:44,018 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:44,601 INFO    SenderThread:14294 [sender.py:send_request_log_artifact():1222] logged artifact run-jxnwebxo-confusion_matrix - {'id': 'QXJ0aWZhY3Q6MjczODg3OTgx', 'digest': '113c50c627ae2b345a84d3d255c1d5ff', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0MzE1NjUw', 'latestArtifact': None}, 'version': 'latest'}
+2022-11-05 13:04:44,601 DEBUG   SenderThread:14294 [sender.py:send():303] send: files
+2022-11-05 13:04:44,601 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file media/table/confusion_matrix_2_580615d474c31f945175.table.json with policy now
+2022-11-05 13:04:44,602 DEBUG   SenderThread:14294 [sender.py:send():303] send: history
+2022-11-05 13:04:44,602 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:44,603 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:44,603 DEBUG   SenderThread:14294 [sender.py:send():303] send: telemetry
+2022-11-05 13:04:44,603 DEBUG   SenderThread:14294 [sender.py:send():303] send: config
+2022-11-05 13:04:44,603 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: log_artifact
+2022-11-05 13:04:45,019 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:04:45,303 INFO    Thread-56 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/20mgvi3l-media/table/confusion_matrix_2_580615d474c31f945175.table.json
+2022-11-05 13:04:46,020 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:46,168 INFO    Thread-58 :14294 [upload_job.py:push():101] Uploaded file /home/wiktor/.cache/wandb/artifacts/obj/md5/fb/dc83b2899661c18306ba19aa5bb04c
+2022-11-05 13:04:47,255 INFO    SenderThread:14294 [sender.py:send_request_log_artifact():1222] logged artifact run-jxnwebxo-roc - {'id': 'QXJ0aWZhY3Q6MjczODg3OTk5', 'digest': '7a98de270bdd130e3d21c36677e3b3b4', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0MzE1NjU1', 'latestArtifact': None}, 'version': 'latest'}
+2022-11-05 13:04:47,545 DEBUG   SenderThread:14294 [sender.py:send():303] send: files
+2022-11-05 13:04:47,545 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file media/table/roc_3_65abb580b30c47cff7c0.table.json with policy now
+2022-11-05 13:04:47,545 DEBUG   SenderThread:14294 [sender.py:send():303] send: history
+2022-11-05 13:04:47,546 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:47,548 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:47,549 DEBUG   SenderThread:14294 [sender.py:send():303] send: exit
+2022-11-05 13:04:47,549 INFO    SenderThread:14294 [sender.py:send_exit():442] handling exit code: 1
+2022-11-05 13:04:47,549 INFO    SenderThread:14294 [sender.py:send_exit():444] handling runtime: 56
+2022-11-05 13:04:47,549 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:47,549 INFO    SenderThread:14294 [sender.py:send_exit():450] send defer
+2022-11-05 13:04:47,550 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 13:04:47,550 DEBUG   SenderThread:14294 [sender.py:send():303] send: stats
+2022-11-05 13:04:47,550 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,551 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 0
+2022-11-05 13:04:47,551 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,551 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-05 13:04:47,551 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 1
+2022-11-05 13:04:47,551 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,551 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 1
+2022-11-05 13:04:47,640 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,640 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-05 13:04:47,640 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 2
+2022-11-05 13:04:47,640 DEBUG   SenderThread:14294 [sender.py:send():303] send: stats
+2022-11-05 13:04:47,641 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,641 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 2
+2022-11-05 13:04:47,641 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,641 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-05 13:04:47,641 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 3
+2022-11-05 13:04:47,642 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,642 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 3
+2022-11-05 13:04:47,642 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,642 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-05 13:04:47,642 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 4
+2022-11-05 13:04:47,642 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,642 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 4
+2022-11-05 13:04:47,642 DEBUG   SenderThread:14294 [sender.py:send():303] send: summary
+2022-11-05 13:04:47,643 INFO    SenderThread:14294 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-05 13:04:47,643 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,643 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-05 13:04:47,643 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 5
+2022-11-05 13:04:47,643 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,643 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 5
+2022-11-05 13:04:47,643 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,643 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-05 13:04:47,643 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 6
+2022-11-05 13:04:47,644 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:47,644 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 6
+2022-11-05 13:04:47,644 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:47,644 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-05 13:04:48,021 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/config.yaml
+2022-11-05 13:04:48,021 INFO    Thread-34 :14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:04:48,101 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: keepalive
+2022-11-05 13:04:48,288 INFO    Thread-59 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/382ybwoz-media/table/roc_3_65abb580b30c47cff7c0.table.json
+2022-11-05 13:04:49,634 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 7
+2022-11-05 13:04:49,635 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:49,635 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 7
+2022-11-05 13:04:49,635 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:49,635 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-05 13:04:49,635 INFO    SenderThread:14294 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-05 13:04:50,022 INFO    SenderThread:14294 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:50,022 INFO    SenderThread:14294 [dir_watcher.py:finish():392] scan: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log output.log
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/config.yaml config.yaml
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-metadata.json wandb-metadata.json
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/model-best.h5 model-best.h5
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/requirements.txt requirements.txt
+2022-11-05 13:04:50,023 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json wandb-summary.json
+2022-11-05 13:04:50,024 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/graph/graph_summary_4db46c68be4b26fc5515.graph.json media/graph/graph_summary_4db46c68be4b26fc5515.graph.json
+2022-11-05 13:04:50,024 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table/confusion_matrix_2_580615d474c31f945175.table.json media/table/confusion_matrix_2_580615d474c31f945175.table.json
+2022-11-05 13:04:50,024 INFO    SenderThread:14294 [dir_watcher.py:finish():406] scan save: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/media/table/roc_3_65abb580b30c47cff7c0.table.json media/table/roc_3_65abb580b30c47cff7c0.table.json
+2022-11-05 13:04:50,026 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 8
+2022-11-05 13:04:50,029 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:50,029 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 8
+2022-11-05 13:04:50,029 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:50,029 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-05 13:04:50,029 INFO    SenderThread:14294 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-05 13:04:50,719 INFO    Thread-61 :14294 [upload_job.py:push():143] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/config.yaml
+2022-11-05 13:04:50,731 INFO    Thread-60 :14294 [upload_job.py:push():143] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/output.log
+2022-11-05 13:04:50,753 INFO    Thread-64 :14294 [upload_job.py:push():143] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/wandb-summary.json
+2022-11-05 13:04:50,773 INFO    Thread-63 :14294 [upload_job.py:push():143] Uploaded file /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/files/requirements.txt
+2022-11-05 13:04:52,335 INFO    Thread-62 :14294 [upload_job.py:push():143] Uploaded file /tmp/tmp1xqq1ui9wandb/360dk1i5-model-best.h5
+2022-11-05 13:04:52,536 INFO    Thread-33 (_thread_body):14294 [sender.py:transition_state():463] send defer: 9
+2022-11-05 13:04:52,536 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:52,537 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 9
+2022-11-05 13:04:52,537 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:52,537 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-05 13:04:52,537 INFO    SenderThread:14294 [file_pusher.py:join():173] waiting for file pusher
+2022-11-05 13:04:52,537 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 10
+2022-11-05 13:04:52,537 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:52,537 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 10
+2022-11-05 13:04:52,537 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:52,537 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-05 13:04:53,013 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 11
+2022-11-05 13:04:53,014 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:53,014 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 11
+2022-11-05 13:04:53,014 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:53,014 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-05 13:04:53,014 INFO    SenderThread:14294 [sender.py:transition_state():463] send defer: 12
+2022-11-05 13:04:53,015 DEBUG   SenderThread:14294 [sender.py:send():303] send: final
+2022-11-05 13:04:53,015 DEBUG   SenderThread:14294 [sender.py:send():303] send: footer
+2022-11-05 13:04:53,016 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: defer
+2022-11-05 13:04:53,016 INFO    HandlerThread:14294 [handler.py:handle_request_defer():161] handle defer: 12
+2022-11-05 13:04:53,016 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: defer
+2022-11-05 13:04:53,016 INFO    SenderThread:14294 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-05 13:04:53,016 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: poll_exit
+2022-11-05 13:04:53,017 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: poll_exit
+2022-11-05 13:04:53,017 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: server_info
+2022-11-05 13:04:53,018 DEBUG   SenderThread:14294 [sender.py:send_request():317] send_request: server_info
+2022-11-05 13:04:53,019 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: get_summary
+2022-11-05 13:04:53,020 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: sampled_history
+2022-11-05 13:04:53,269 INFO    MainThread:14294 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-05 13:04:53,269 INFO    MainThread:14294 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-05 13:04:53,270 INFO    MainThread:14294 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-05 13:04:53,270 DEBUG   HandlerThread:14294 [handler.py:handle_request():138] handle_request: shutdown
+2022-11-05 13:04:53,270 INFO    HandlerThread:14294 [handler.py:finish():814] shutting down handler
+2022-11-05 13:04:54,016 INFO    WriterThread:14294 [datastore.py:close():279] close: /home/wiktor/master-thesis/src/wandb/run-20221105_130343-jxnwebxo/run-jxnwebxo.wandb
+2022-11-05 13:04:54,268 INFO    SenderThread:14294 [sender.py:finish():1331] shutting down sender
+2022-11-05 13:04:54,269 INFO    SenderThread:14294 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-05 13:04:54,269 INFO    SenderThread:14294 [file_pusher.py:join():173] waiting for file pusher
+2022-11-05 13:04:54,274 INFO    MainThread:14294 [internal.py:handle_exit():78] Internal process exited
+2022-11-05 13:04:54,274 INFO    MainThread:14294 [internal.py:handle_exit():78] Internal process exited
