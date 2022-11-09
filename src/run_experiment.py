@@ -20,6 +20,11 @@ def run_experiment(experiment_name):
         from experiments.numbers_experiment import run
 
         run()
+
+    elif experiment_name == "cnn":
+        from experiments.cnn_experiment import run
+
+        run()
     logger.info(f'Finished experiment "{experiment_name}"')
 
 

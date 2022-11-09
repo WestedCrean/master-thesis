@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 from training.engine import train, test
-from training.create_models import get_models_for_experiment
+from training.create_models import get_models_for_cnn_behavior_experiment
 from datasets import numbers, get_class_name, log_dataset_statistics
 from visualisations.history import plot_history
 from visualisations.classification_metrics import get_classification_report
 
 
 def run():
-    wandb_project = "phcd_numbers"
+    wandb_project = "cnn_experiment"
     train_data = numbers(subset="training")
     validation_data = numbers(subset="validation")
     test_data = numbers(path="../data/numbers/test", subset=None, validation_split=None)
@@ -24,19 +24,14 @@ def run():
     with wandb.init(project=wandb_project, config={"class_labels": class_labels}):
         log_dataset_statistics(train_data, validation_data, class_labels)
 
-    for model, config in get_models_for_experiment():
+    for model, config in get_models_for_cnn_behavior_experiment():
         wandb.init(project=wandb_project, config=config, name=config["model_name"])
         history = train(
             train_data,
             model,
-            epochs=2,
+            epochs=10,
             validation_dataset=validation_data,
-            callbacks=[
-                WandbCallback(),
-                tf.keras.callbacks.EarlyStopping(
-                    monitor="val_loss", patience=6, restore_best_weights=True
-                ),
-            ],
+            callbacks=[WandbCallback()],
         )
 
         _, y_true, y_pred, y_probas = test(test_data, model)
