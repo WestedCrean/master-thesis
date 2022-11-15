@@ -141,3 +141,28 @@ def log_dataset_statistics(
     test_labels = [c for label in test_labels for c in label]
 
     wandb.sklearn.plot_class_proportions(train_labels, test_labels, class_labels)
+
+def log_dataset_to_wandb(ds_name: str, train_dataset: tf.data.Dataset, test_dataset: tf.data.Dataset, class_labels: list, wandb_project: str):
+    """
+    Reads dataset and logs it to wandb
+
+    Args:
+        ds_name (str): name of the dataset
+        train_dataset (tf.data.Dataset): training dataset
+        test_dataset (tf.data.Dataset): test dataset
+        class_labels (list): list of class labels
+        wandb_project (str): name of the wandb project
+    """
+    logger.info(f"Logging dataset {ds_name} to wandb project {wandb_project}")
+    wandb.init(project=wandb_project, name=ds_name)
+
+    # get train and test datasets
+    train_dataset, test_dataset = ds
+
+    # iterate over images and labels in train and test datasets and log them to wandb as wandb.Image
+    for images, labels in train_dataset:
+        for image, label in zip(images, labels):
+            #wandb.log({f"{ds_name}_train": wandb.Image(image, caption=label.numpy())})
+            print(label)
+    
+    logger.info("Done")

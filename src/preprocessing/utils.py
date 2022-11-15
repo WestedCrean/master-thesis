@@ -4,7 +4,6 @@ import numpy as np
 import shutil
 import random
 
-
 def train_test_split(data: list, test_ratio: float = 0.2):
     return np.split(np.array(data), [int(len(data) * (1 - test_ratio))])
 

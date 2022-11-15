@@ -8,7 +8,7 @@ import tensorflow as tf
 
 from training.engine import train, test
 from training.create_models import get_models_for_cnn_behavior_experiment
-from datasets import numbers, get_class_name, log_dataset_statistics
+from datasets import numbers, get_class_name, log_dataset_statistics, log_dataset_to_wandb
 from visualisations.history import plot_history
 from visualisations.classification_metrics import get_classification_report
 
@@ -23,6 +23,7 @@ def run():
 
     with wandb.init(project=wandb_project, config={"class_labels": class_labels}):
         log_dataset_statistics(train_data, validation_data, class_labels)
+        log_dataset_to_wandb("numbers", train_data, validation_data, class_labels, wandb_project)
 
     for model, config in get_models_for_cnn_behavior_experiment():
         wandb.init(project=wandb_project, config=config, name=config["model_name"])

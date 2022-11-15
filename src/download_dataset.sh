@@ -1,9 +1,14 @@
-#!/bin/zsh
+#!/bin/bash
 
-# download the dataset
-wget -O phcd.rar https://cs.pollub.pl/phcd/phcd.rar 
-
-echo "Dataset downloaded."
+# check if phcd.rar is present in src folder, if yes then don't download it
+if [ ! -f "phcd.rar" ]; then
+    echo "phcd.rar not found in src folder"
+    # download the dataset
+    wget -O phcd.rar https://cs.pollub.pl/phcd/phcd.rar 
+    echo "Dataset downloaded."
+else
+    echo "phcd.rar already present"
+fi
 
 # copy to ../data/
 mv phcd.rar ../data/phcd.rar

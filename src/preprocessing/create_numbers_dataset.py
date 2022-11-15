@@ -4,8 +4,7 @@ import numpy as np
 import shutil
 import random
 
-from .utils import create_train_test_sets
-
+from utils import create_train_test_sets
 
 def create_numbers_dataset():
     """Creates a dataset of handwritten numbers from the PHCD dataset"""
