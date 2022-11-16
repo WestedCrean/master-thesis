@@ -16,7 +16,7 @@ from visualisations.classification_metrics import get_classification_report
 
 
 def run(clear_project_before=False):
-    wandb_project = "phcd_numbers"
+    wandb_project = "lowercase_latin_letters_with_diacritics"
     train_data = numbers(subset="training")
     validation_data = numbers(subset="validation")
     test_data = numbers(path="../data/numbers/test", subset=None, validation_split=None)
@@ -39,12 +39,12 @@ def run(clear_project_before=False):
         history = train(
             train_data,
             model,
-            epochs=2,
+            epochs=50,
             validation_dataset=validation_data,
             callbacks=[
                 WandbCallback(),
                 tf.keras.callbacks.EarlyStopping(
-                    monitor="val_loss", patience=6, restore_best_weights=True
+                    monitor="val_loss", patience=4, restore_best_weights=True
                 ),
             ],
         )
