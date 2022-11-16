@@ -8,12 +8,15 @@ from loguru import logger
 from .utils import create_train_test_sets
 
 
-def create_numbers_dataset():
-    """Creates a dataset of handwritten numbers from the PHCD dataset"""
+def create_edge_case_dataset():
+    """
+    Creates a dataset of handwritten letters from the PHCD dataset.
+    Only latin letters with diacritics and their non-diacritics counterparts are included.
+    """
     current_path = pathlib.Path(__file__).resolve().parent
 
-    # check if ../../data/numbers exists
-    target_path = pathlib.Path(current_path / "../../data/numbers")
+    # check if target folder exists
+    target_path = pathlib.Path(current_path / "../../data/edge_case")
     target_path.mkdir(parents=True, exist_ok=True)
 
     classes_dir = [str(i) for i in range(10)]
@@ -31,4 +34,4 @@ def create_numbers_dataset():
 
 
 if __name__ == "__main__":
-    create_numbers_dataset()
+    create_edge_case_dataset()

@@ -161,17 +161,25 @@ def log_dataset_to_wandb(
         wandb_project (str): name of the wandb project
     """
     logger.info(f"Logging dataset {ds_name} to wandb project {wandb_project}")
-    with wandb.init(project=wandb_project, name=ds_name) as run:
+    with wandb.init(entity="gratkadlafana", project="numbers") as run:
 
-        my_data = wandb.Artifact("phcd_numbers", type="raw_data")
+        dataset_artifact = wandb.Artifact(ds_name, type="raw_data")
 
         for subdir in ["train", "test"]:
             # count files in each subdirectory
-            path_obj = pathlib.Path(dataset_path, subdir).resolve()
-            num_files = len(list(path_obj.glob("*/*.png")))
-            logger.info(f"Found {num_files} files in {path_obj} directory")
-            my_data.add_dir(path_obj)
+            root_path = pathlib.Path(dataset_path, subdir).resolve()
 
-        run.log_artifact(my_data)
+            # for each directory in the root_path
+            for dir in root_path.iterdir():
+                # count files in each subdirectory
+                files = list(dir.glob("*.png"))
+                class_name = get_class_name(dir.name)
+                logger.info(f"Found {len(files)} files in subdirectory {class_name}")
+
+                image = wandb.Image(files, caption="Input image")
+
+                dataset_artifact.add_dir(str(dir) + "/", name=class_name)
+
+        run.log_artifact(dataset_artifact)
 
     logger.info("Done")
