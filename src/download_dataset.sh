@@ -10,6 +10,8 @@ else
     echo "phcd.rar already present"
 fi
 
+mkdir ../data
+
 # copy to ../data/
 mv phcd.rar ../data/phcd.rar
 
