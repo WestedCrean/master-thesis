@@ -10,6 +10,7 @@ def get_classification_report(y_true, y_pred, class_labels, epoch=None):
     columns.extend(["class", "precision", "recall", "f1-score", "support"])
 
     data = []
+    print(f"Report keys: {report.keys()}")
     for cl in class_labels:
         row = [epoch, cl] if epoch else [cl]
         row.extend(

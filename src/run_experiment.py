@@ -4,10 +4,26 @@ import click
 from loguru import logger
 import wandb
 
+from datasets import log_dataset_to_wandb
+
 
 @click.group()
 def main():
     pass
+
+
+@main.command()
+@click.argument("experiment_name", type=str)
+def upload_dataset_to_wandb(experiment_name):
+    """Runs experiment given by experiment_name"""
+    logger.info(f'Uploading dataset from experiment "{experiment_name}"')
+
+    if experiment_name == "numbers":
+        log_dataset_to_wandb(
+            "numbers_data", f"../data/{experiment_name}", experiment_name
+        )
+
+    logger.info(f'Finished experiment "{experiment_name}"')
 
 
 @main.command()
