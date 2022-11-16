@@ -10,16 +10,24 @@ from loguru import logger
 
 from training.engine import train, test
 from training.create_models import get_models_for_experiment
-from datasets import numbers, get_class_name, log_dataset_statistics
+from datasets import (
+    lowercase_latin_letters_with_diacritics,
+    get_class_name,
+    log_dataset_statistics,
+)
 from visualisations.history import plot_history
 from visualisations.classification_metrics import get_classification_report
 
 
 def run(clear_project_before=False):
     wandb_project = "lowercase_latin_letters_with_diacritics"
-    train_data = numbers(subset="training")
-    validation_data = numbers(subset="validation")
-    test_data = numbers(path="../data/numbers/test", subset=None, validation_split=None)
+    train_data = lowercase_latin_letters_with_diacritics(subset="training")
+    validation_data = lowercase_latin_letters_with_diacritics(subset="validation")
+    test_data = lowercase_latin_letters_with_diacritics(
+        path="../data/lowercase_latin_letters_with_diacritics/test",
+        subset=None,
+        validation_split=None,
+    )
 
     class_labels = [get_class_name(cn) for cn in validation_data.class_names]
 

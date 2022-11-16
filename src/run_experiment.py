@@ -41,6 +41,11 @@ def run_experiment(experiment_name):
         from experiments.cnn_experiment import run
 
         run()
+
+    elif experiment_name == "lowercase_diacritics":
+        from experiments.lowercase_latin_letters_with_diacritics import run
+
+        run(clear_project_before=True)
     logger.info(f'Finished experiment "{experiment_name}"')
 
 
