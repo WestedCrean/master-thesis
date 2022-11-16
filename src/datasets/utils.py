@@ -1,6 +1,8 @@
 from collections import OrderedDict
 import wandb
 import tensorflow as tf
+import pathlib
+from loguru import logger
 
 char_id_to_class_name = OrderedDict(
     {
@@ -142,7 +144,12 @@ def log_dataset_statistics(
 
     wandb.sklearn.plot_class_proportions(train_labels, test_labels, class_labels)
 
-def log_dataset_to_wandb(ds_name: str, train_dataset: tf.data.Dataset, test_dataset: tf.data.Dataset, class_labels: list, wandb_project: str):
+
+def log_dataset_to_wandb(
+    ds_name: str,
+    dataset_path: str,
+    wandb_project: str,
+):
     """
     Reads dataset and logs it to wandb
 
@@ -154,15 +161,17 @@ def log_dataset_to_wandb(ds_name: str, train_dataset: tf.data.Dataset, test_data
         wandb_project (str): name of the wandb project
     """
     logger.info(f"Logging dataset {ds_name} to wandb project {wandb_project}")
-    wandb.init(project=wandb_project, name=ds_name)
+    with wandb.init(project=wandb_project, name=ds_name) as run:
 
-    # get train and test datasets
-    train_dataset, test_dataset = ds
+        my_data = wandb.Artifact("phcd_numbers", type="raw_data")
 
-    # iterate over images and labels in train and test datasets and log them to wandb as wandb.Image
-    for images, labels in train_dataset:
-        for image, label in zip(images, labels):
-            #wandb.log({f"{ds_name}_train": wandb.Image(image, caption=label.numpy())})
-            print(label)
-    
+        for subdir in ["train", "test"]:
+            # count files in each subdirectory
+            path_obj = pathlib.Path(dataset_path, subdir).resolve()
+            num_files = len(list(path_obj.glob("*/*.png")))
+            logger.info(f"Found {num_files} files in {path_obj} directory")
+            my_data.add_dir(path_obj)
+
+        run.log_artifact(my_data)
+
     logger.info("Done")
