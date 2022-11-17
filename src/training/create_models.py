@@ -327,7 +327,6 @@ def get_models_for_experiment(num_classes=10, input_shape=(32, 32, 3)) -> List:
             input_shape=input_shape,
             num_classes=num_classes,
             learning_rate=0.001,
-            dropout_rate=0.25,
             model_name="CNN_5_alternative_arch_1",
         ),
         get_convnet_model(
