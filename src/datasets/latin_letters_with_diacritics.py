@@ -10,12 +10,16 @@ def latin_letters_with_diacritics(
 ) -> tf.data.Dataset:
     data_path = pathlib.Path(path)
 
-    return tf.keras.preprocessing.image_dataset_from_directory(
-        data_path,
-        validation_split=validation_split,
-        subset=subset,
-        seed=42,
-        image_size=(32, 32),
-        batch_size=32,
-        label_mode="categorical",
+    return (
+        tf.keras.preprocessing.image_dataset_from_directory(
+            data_path,
+            validation_split=validation_split,
+            subset=subset,
+            seed=42,
+            image_size=(32, 32),
+            batch_size=32,
+            label_mode="categorical",
+        )
+        .prefetch(tf.data.experimental.AUTOTUNE)
+        .cache()
     )

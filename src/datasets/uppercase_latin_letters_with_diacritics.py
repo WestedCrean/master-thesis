@@ -2,8 +2,8 @@ import pathlib
 import tensorflow as tf
 
 
-def lowercase_latin_letters(
-    path="../data/lowercase_latin_letters/train",
+def uppercase_latin_letters_with_diacritics(
+    path="../data/uppercase_latin_letters_with_diacritics/train",
     subset="training",
     validation_split=0.2,
     batch_size=32,

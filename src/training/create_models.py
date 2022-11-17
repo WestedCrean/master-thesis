@@ -19,6 +19,7 @@ def get_convnet_model(
     use_dropout_classifier: bool = True,
     use_double_conv_layers: bool = False,
     use_batch_normalization: bool = False,
+    num_epochs: int = 8,
     optimizer: tf.keras.optimizers.Optimizer = tf.keras.optimizers.Adam,
     loss: tf.keras.losses.Loss = tf.keras.losses.CategoricalCrossentropy(),
     metrics: list = [tf.keras.metrics.CategoricalAccuracy()],
@@ -61,6 +62,7 @@ def get_convnet_model(
     config = dict(
         learning_rate=learning_rate,
         model_name=model_name,
+        num_epochs=num_epochs,
     )
 
     return model, config
@@ -71,6 +73,7 @@ def get_vgg_model(
     num_classes: int,
     learning_rate: float,
     model_name: str,
+    num_epochs: int = 8,
     optimizer: tf.keras.optimizers.Optimizer = tf.keras.optimizers.Adam,
     loss: tf.keras.losses.Loss = tf.keras.losses.CategoricalCrossentropy(),
     metrics: list = [tf.keras.metrics.CategoricalAccuracy()],
@@ -146,6 +149,7 @@ def get_vgg_model(
     config = dict(
         learning_rate=learning_rate,
         model_name=model_name,
+        num_epochs=num_epochs,
     )
 
     return model, config
@@ -158,6 +162,7 @@ def get_convnet_alternative_architecture_1_model(
     model_name: str,
     optimizer: tf.keras.optimizers.Optimizer = tf.keras.optimizers.Adam,
     loss: tf.keras.losses.Loss = tf.keras.losses.CategoricalCrossentropy(),
+    num_epochs: int = 8,
     metrics: list = [tf.keras.metrics.CategoricalAccuracy()],
 ) -> Tuple[tf.keras.Model, dict]:
     # Input layer
@@ -241,6 +246,7 @@ def get_convnet_alternative_architecture_1_model(
     config = dict(
         learning_rate=learning_rate,
         model_name=model_name,
+        num_epochs=num_epochs,
     )
 
     return model, config
@@ -260,36 +266,6 @@ def get_models_for_experiment(num_classes=10, input_shape=(32, 32, 3)) -> List:
             learning_rate=0.001,
             dropout_rate=0.3,
             model_name=f"CNN_1",
-        ),
-        get_convnet_model(
-            cnn_filters=[],
-            cnn_kernels=[],
-            dense_units=[16, 32, 16],
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.2,
-            model_name="Dense_1",
-        ),
-        get_convnet_model(
-            cnn_filters=[],
-            cnn_kernels=[],
-            dense_units=[64, 128, 256],
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.2,
-            model_name="Dense_2",
-        ),
-        get_convnet_model(
-            cnn_filters=[64, 32],
-            cnn_kernels=[(3, 3), (3, 3)],
-            dense_units=[64],
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.2,
-            model_name="CNN_2",
         ),
         get_convnet_model(
             cnn_filters=[32, 64, 32],
@@ -321,6 +297,7 @@ def get_models_for_experiment(num_classes=10, input_shape=(32, 32, 3)) -> List:
             num_classes=num_classes,
             learning_rate=0.001,
             dropout_rate=0.25,
+            num_epochs=4,
             model_name="CNN_4",
         ),
         get_convnet_alternative_architecture_1_model(
@@ -329,67 +306,30 @@ def get_models_for_experiment(num_classes=10, input_shape=(32, 32, 3)) -> List:
             learning_rate=0.001,
             model_name="CNN_5_alternative_arch_1",
         ),
+        get_vgg_model(
+            input_shape=input_shape,
+            num_classes=num_classes,
+            learning_rate=0.001,
+            model_name="VGG_1",
+        ),
         get_convnet_model(
-            cnn_filters=[64, 128, 256],
+            cnn_filters=[64, 128, 64],
             cnn_kernels=[
                 (3, 3),
                 (3, 3),
                 (3, 3),
             ],
-            dense_units=[256, 128, 64],
+            dense_units=[1152, 64],
             cnn_padding="same",
             cnn_activation_fn=tf.keras.layers.LeakyReLU(alpha=0.1),
-            use_double_conv_layers=True,
-            batch_norm_momentum=0.9,
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.25,
-            model_name="CNN_6",
-        ),
-    ]
-    return models
-
-
-def get_models_for_cnn_behavior_experiment(
-    num_classes=10, input_shape=(32, 32, 3)
-) -> List:
-    """
-    Create models with different hyperparameters to be trained from scratch
-    """
-    models = [
-        get_convnet_model(
-            cnn_filters=[],
-            cnn_kernels=[],
-            dense_units=[16, 32, 16],
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.2,
-            model_name="Dense_1",
-        ),
-        get_convnet_model(
-            cnn_filters=[64, 32],
-            cnn_kernels=[(3, 3), (3, 3)],
-            dense_units=[64],
-            input_shape=input_shape,
-            num_classes=num_classes,
-            learning_rate=0.001,
-            dropout_rate=0.2,
-            model_name="CNN_1",
-        ),
-        get_convnet_model(
-            cnn_filters=[32, 64, 32],
-            cnn_kernels=[(5, 5), (5, 5), (5, 5)],
-            dense_units=[256],
-            cnn_padding="same",
             use_double_conv_layers=True,
             batch_norm_momentum=0.15,
             input_shape=input_shape,
             num_classes=num_classes,
             learning_rate=0.001,
             dropout_rate=0.25,
-            model_name="CNN_2",
+            num_epochs=4,
+            model_name="CNN_6",
         ),
     ]
     return models

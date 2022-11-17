@@ -8,10 +8,10 @@ from loguru import logger
 from .utils import create_train_test_sets
 
 
-def create_lowercase_latin_letters_dataset():
+def create_uppercase_latin_letters_dataset():
     """
     Creates a dataset of handwritten latin letters from the PHCD dataset.
-    Only lowercase letters are included.
+    Only uppercase letters are included.
     """
     current_path = pathlib.Path(__file__).resolve().parent
 
@@ -19,7 +19,7 @@ def create_lowercase_latin_letters_dataset():
     target_path = pathlib.Path(current_path / "../../data/lowercase_latin_letters")
     target_path.mkdir(parents=True, exist_ok=True)
 
-    classes_dir = [str(i) for i in range(10, 36)]
+    classes_dir = [str(i) for i in range(36, 62)]
     test_ratio = 0.1
 
     for i in classes_dir:
@@ -34,4 +34,4 @@ def create_lowercase_latin_letters_dataset():
 
 
 if __name__ == "__main__":
-    create_lowercase_latin_letters_dataset()
+    create_uppercase_latin_letters_dataset()
