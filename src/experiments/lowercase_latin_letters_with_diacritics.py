@@ -49,8 +49,6 @@ def run(clear_project_before=False):
     model_accuracies = []
     no_train = ["CNN_1", "CNN_3", "CNN_5_alternative_arch_1"]
     for model, config in get_models_for_experiment():
-        if config["model_name"] in no_train:
-            continue
         wandb.init(project=wandb_project, config=config, name=config["model_name"])
         num_epochs = config["num_epochs"]
         history = train(
