@@ -22,3 +22,18 @@ def get_classification_report(y_true, y_pred, class_labels, epoch=None):
         data=data,
         columns=columns,
     )
+
+
+def plot_classification_accuracy(model_names: list, val_acc: list):
+    data = [[label, val] for (label, val) in zip(model_names, val_acc)]
+    table = wandb.Table(data=data, columns=["model_name", "accuracy"])
+    wandb.log(
+        {
+            "classification_accuracy_comparison": wandb.plot.bar(
+                table,
+                "model_name",
+                "accuracy",
+                title="Classification accuracy comparison",
+            )
+        }
+    )

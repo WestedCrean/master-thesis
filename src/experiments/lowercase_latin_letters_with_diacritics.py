@@ -16,7 +16,10 @@ from datasets import (
     log_dataset_statistics,
 )
 from visualisations.history import plot_history
-from visualisations.classification_metrics import get_classification_report
+from visualisations.classification_metrics import (
+    get_classification_report,
+    plot_classification_accuracy,
+)
 
 
 def run(clear_project_before=False):
@@ -42,41 +45,37 @@ def run(clear_project_before=False):
     with wandb.init(project=wandb_project, config={"class_labels": class_labels}):
         log_dataset_statistics(train_data, validation_data, class_labels)
 
+    model_names = []
+    model_accuracies = []
+    no_train = ["CNN_1", "CNN_3", "CNN_5_alternative_arch_1"]
     for model, config in get_models_for_experiment():
+        if config["model_name"] in no_train:
+            continue
         wandb.init(project=wandb_project, config=config, name=config["model_name"])
+        num_epochs = config["num_epochs"]
         history = train(
             train_data,
             model,
-            epochs=50,
+            epochs=num_epochs,
             validation_dataset=validation_data,
             callbacks=[
                 WandbCallback(),
                 tf.keras.callbacks.EarlyStopping(
-                    monitor="val_loss", patience=4, restore_best_weights=True
+                    monitor="val_loss", patience=2, restore_best_weights=True
                 ),
             ],
         )
 
         _, y_true, y_pred, y_probas = test(test_data, model)
         wandb.sklearn.plot_confusion_matrix(y_true, y_pred)
-        wandb.sklearn.plot_roc(y_true, y_probas, class_labels)
-        cl = get_classification_report(y_true, y_pred, class_labels=class_labels)
-        wandb.log(
-            {
-                "classification_report": cl,
-                "precision_history": wandb.plot.line(
-                    cl, "epoch", "precision", title="Precision History"
-                ),
-                "recall_history": wandb.plot.line(
-                    cl, "epoch", "recall", title="Recall History"
-                ),
-                "f1_score_history": wandb.plot.line(
-                    cl, "epoch", "f1-score", title="F1 Score History"
-                ),
-                "accuracy": plot_history(history),
-            }
-        )
+        val_acc = history.history["val_categorical_accuracy"][-1]
+        model_names.append(config["model_name"])
+        model_accuracies.append(val_acc)
         wandb.finish()
+
+    with wandb.init(project=wandb_project):
+        # post experiment visualisations
+        plot_classification_accuracy(model_names, model_accuracies)
 
 
 if __name__ == "__main__":
