@@ -2,9 +2,9 @@
 
 # check if phcd.rar is present in src folder, if yes then don't download it
 if [ ! -f "phcd.rar" ]; then
-    echo "phcd.rar not found in src folder"
+    echo "phcd.rar not found in src folder - proceeding with download"
     # download the dataset
-    wget -O phcd.rar https://cs.pollub.pl/phcd/phcd.rar 
+    wget -O phcd.rar https://cs.pollub.pl/phcd/phcd.rar --no-check-certificate
     echo "Dataset downloaded."
 else
     echo "phcd.rar already present"
