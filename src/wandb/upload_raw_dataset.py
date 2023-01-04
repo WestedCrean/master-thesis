@@ -11,7 +11,7 @@ def upload_raw_dataset():
     base_dir = pathlib.Path().resolve().parent
     raw_data_source = f"{base_dir}/data/all_characters"
 
-    labels = [str(i) for i in range(0, 9)]
+    classes_dir = [str(i) for i in range(10, 80)]
     run = wandb.init(project="master-thesis", job_type="upload")
 
     data_at = wandb.Artifact(f"numbers", type=f"raw_data")
