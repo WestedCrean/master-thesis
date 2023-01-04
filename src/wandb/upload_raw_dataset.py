@@ -11,7 +11,8 @@ def upload_raw_dataset():
     base_dir = pathlib.Path().resolve().parent
     raw_data_source = f"{base_dir}/data/all_characters"
 
-    labels = [str(i) for i in range(10, 80)]
+    #labels = [str(i) for i in range(10, 80)]
+    labels = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)] # only lowercase
     run = wandb.init(project="master-thesis", job_type="upload")
     
     data_at = wandb.Artifact(f"raw-letters", type=f"raw_data")
