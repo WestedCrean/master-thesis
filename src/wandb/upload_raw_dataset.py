@@ -11,7 +11,7 @@ def upload_raw_dataset():
     base_dir = pathlib.Path().resolve().parent
     raw_data_source = f"{base_dir}/data/all_characters"
 
-    classes_dir = [str(i) for i in range(10, 80)]
+    labels = [str(i) for i in range(10, 80)]
     run = wandb.init(project="master-thesis", job_type="upload")
 
     data_at = wandb.Artifact(f"raw-letters", type=f"raw_data")
@@ -31,7 +31,7 @@ def upload_raw_dataset():
                 # add file to artifact by full path
                 data_at.add_file(file_path, name=l + "/" + f)
 
-    print("Adding artifact to run")
+    print("Uploading artifact")
     run.log_artifact(data_at)
     run.finish()
 
