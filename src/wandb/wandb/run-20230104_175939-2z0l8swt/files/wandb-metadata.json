@@ -1,0 +1,117 @@
+{
+    "os": "Linux-5.15.0-56-generic-x86_64-with-glibc2.35",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-01-04T16:59:40.815967",
+    "startedAt": "2023-01-04T16:59:39.866121",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/wiktor/code/master-thesis/src/wandb/upload_raw_dataset.py",
+    "codePath": "src/wandb/upload_raw_dataset.py",
+    "git": {
+        "remote": "https://github.com/WestedCrean/master-thesis.git",
+        "commit": "6219de83ff3f5a95eb27cb0fc23cb40cb3214231"
+    },
+    "email": "wikflis@gmail.com",
+    "root": "/home/wiktor/code/master-thesis",
+    "host": "wiktor-on-linux",
+    "username": "wiktor",
+    "executable": "/home/wiktor/.pyenv/versions/master-thesis/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3129.0193125,
+        "min": 2200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4268.002,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2532.091,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2609.172,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4270.789,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4269.31,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4267.958,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2440.434,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2132.789,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3900.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2800.0,
+            "min": 2200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 208.0059356689453,
+        "used": 164.3952522277832
+    },
+    "memory": {
+        "total": 31.296764373779297
+    }
+}
