@@ -14,7 +14,7 @@ def upload_raw_dataset():
     classes_dir = [str(i) for i in range(10, 80)]
     run = wandb.init(project="master-thesis", job_type="upload")
 
-    data_at = wandb.Artifact(f"numbers", type=f"raw_data")
+    data_at = wandb.Artifact(f"raw-letters", type=f"raw_data")
     
     for l in labels:
         imgs_per_label = os.path.join(raw_data_source, l)
