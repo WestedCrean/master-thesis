@@ -13,17 +13,23 @@ def data_split():
     raw_data_source = f"{base_dir}/data/all_characters"
 
     classes_dir = [str(i) for i in range(10, 80)]
-    run = wandb.init(project="master-thesis", job_type="upload")
+    run = wandb.init(project="master-thesis", job_type="data-transform")
 
     data_at = run.use_artifact('raw-letters:latest')
     data_dir = data_at.download()
 
-    data_split_at = wandb.Artifact("split-80-10-10", type="train_val_test_split")
+    #data_split_at = wandb.Artifact("split-80-10-10", type="train_val_test_split")
     # create a table with columns we want to track/compare
-    preview_dt = wandb.Table(columns=["id", "image", "label", "split"])
+    #preview_dt = wandb.Table(columns=["id", "image", "label", "split"])
     
     for l in labels:
+        if l.startswith("."): # skip non-label file
+            continue
+
         imgs_per_label = os.path.join(raw_data_source, l)
+        print(imgs_per_label)
+
+        break
         if os.path.isdir(imgs_per_label):
             # filter out "DS_Store"
             imgs = [i for i in os.listdir(imgs_per_label) if not i.startswith(".DS")]
@@ -38,8 +44,8 @@ def data_split():
                 data_at.add_file(file_path, name=l + "/" + f)
 
     print("Uploading artifact")
-    run.log_artifact(data_at)
-    run.finish()
+    #run.log_artifact(data_at)
+    #run.finish()
 
 if __name__ == "__main__":
     data_split()

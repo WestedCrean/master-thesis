@@ -17,12 +17,12 @@ def main():
     """Creates datasets"""
     logger.info("Creating datasets...")
 
-    #create_numbers_dataset()
+    create_numbers_dataset()
     #create_lowercase_latin_letters_dataset()
-    create_lowercase_latin_letters_with_diacritics_dataset()
+    #create_lowercase_latin_letters_with_diacritics_dataset()
     #create_latin_letters_dataset()
-    create_latin_letters_with_diacritics_dataset()
-    create_edge_case_dataset()
+    #create_latin_letters_with_diacritics_dataset()
+    #create_edge_case_dataset()
 
 
 if __name__ == "__main__":

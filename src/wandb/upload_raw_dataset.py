@@ -13,7 +13,7 @@ def upload_raw_dataset():
 
     labels = [str(i) for i in range(10, 80)]
     run = wandb.init(project="master-thesis", job_type="upload")
-
+    
     data_at = wandb.Artifact(f"raw-letters", type=f"raw_data")
     
     for l in labels:
@@ -27,7 +27,6 @@ def upload_raw_dataset():
             img_file_ids = imgs
             for f in img_file_ids:
                 file_path = os.path.join(raw_data_source, l, f)
-                print(f"File path: {file_path}")
                 # add file to artifact by full path
                 data_at.add_file(file_path, name=l + "/" + f)
 
