@@ -4,7 +4,32 @@ import numpy as np
 import shutil
 import random
 from loguru import logger
+from PIL import Image
 
+
+def measure_folder_size(path: pathlib.Path) -> int:
+    # calculate size of folder in megabytes
+    return sum(f.stat().st_size for f in path.glob('**/*') if f.is_file()) / 1024 / 1024
+
+def save_split_data(data, output_path, label, split) -> str:
+    output_path.mkdir(parents=True, exist_ok=True)
+    file_path = output_path / split
+    file_path.mkdir(parents=True, exist_ok=True)
+    file_path = file_path / f"{label}.npz"
+    save_path = file_path.resolve()
+    print(f"Saving {split} data to {save_path}")
+    np.savez_compressed(str(save_path), data)
+    return save_path
+
+def create_npy_files(src_path : pathlib.Path, output_path: pathlib.Path, label: str) -> str:
+    output_path.mkdir(parents=True, exist_ok=True)
+    img_names = [ str(img_name) for img_name in src_path.iterdir() ]
+    img_array = np.array([np.array(Image.open(img_name)) for img_name in img_names])
+    np.savez_compressed(output_path / f"{label}.npz", img_array)
+
+def unpack_npz_file(path: pathlib.Path) -> np.ndarray:
+    path = str(pathlib.Path(path).resolve())
+    return np.load(path)["arr_0"]
 
 def train_test_split(data: list, test_ratio: float = 0.2):
     return np.split(np.array(data), [int(len(data) * (1 - test_ratio))])

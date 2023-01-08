@@ -1,0 +1,7 @@
+[34m[1mwandb[39m[22m:   36 of 36 files downloaded.
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 46, in <module>
+    upload_dataset_splits()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 25, in upload_dataset_splits
+    print(f"Artifact path: {artifact_path} listdir: {pathlib.Path(artifact_path).listdir()}")
+AttributeError: 'PosixPath' object has no attribute 'listdir'

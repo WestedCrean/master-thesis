@@ -1,0 +1,179 @@
+
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Processing label 27
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/27.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/27.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/27.npz
+Processing label 15
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/15.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/15.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/15.npz
+Processing label 17
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/17.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/17.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/17.npz
+Processing label 68
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/68.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/68.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/68.npz
+Processing label 25
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/25.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/25.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/25.npz
+Processing label 28
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/28.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/28.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/28.npz
+Processing label 34
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/34.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/34.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/34.npz
+Processing label 33
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/33.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/33.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/33.npz
+Processing label 65
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/65.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/65.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/65.npz
+Processing label 14
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/14.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/14.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/14.npz
+Processing label 30
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/30.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/30.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/30.npz
+Processing label 66
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/66.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/66.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/66.npz
+Processing label 69
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/69.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/69.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/69.npz
+Processing label 10
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/10.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/10.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/10.npz
+Processing label 63
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/63.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/63.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/63.npz
+Processing label 70
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/70.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/70.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/70.npz
+Processing label 64
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/64.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/64.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/64.npz
+Processing label 22
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/22.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/22.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/22.npz
+Processing label 62
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/62.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/62.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/62.npz
+Processing label 35
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/35.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/35.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/35.npz
+Processing label 21
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/21.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/21.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/21.npz
+Processing label 11
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/11.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/11.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/11.npz
+Processing label 18
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/18.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/18.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/18.npz
+Processing label 23
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/23.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/23.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/23.npz
+Processing label 13
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/13.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/13.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/13.npz
+Processing label 32
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/32.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/32.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/32.npz
+Processing label 26
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/26.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/26.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/26.npz
+Processing label 67
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/67.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/67.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/67.npz
+Processing label 29
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/29.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/29.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/29.npz
+Processing label 12
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/12.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/12.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/12.npz
+Processing label 19
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/19.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/19.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/19.npz
+Processing label 20
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/20.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/20.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/20.npz
+Processing label 31
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/31.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/31.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/31.npz
+Processing label 24
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/24.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/24.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/24.npz
+Processing label 16
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/16.npz
+Saving test data to /home/wiktor/code/master-thesis/src/artifacts/splits/test/16.npz
+Saving val data to /home/wiktor/code/master-thesis/src/artifacts/splits/val/16.npz
+Output files size: 12.179722785949707 MB
+Uploading split artifacts

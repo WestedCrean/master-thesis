@@ -1,0 +1,161 @@
+2023-01-08 10:54:37,483 INFO    StreamThr :26421 [internal.py:wandb_internal():87] W&B internal server running at pid: 26421, started at: 2023-01-08 10:54:37.483562
+2023-01-08 10:54:37,484 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: status
+2023-01-08 10:54:37,485 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: status
+2023-01-08 10:54:37,486 DEBUG   SenderThread:26421 [sender.py:send():303] send: header
+2023-01-08 10:54:37,486 INFO    WriterThread:26421 [datastore.py:open_for_write():75] open: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/run-2zv35ry9.wandb
+2023-01-08 10:54:37,486 DEBUG   SenderThread:26421 [sender.py:send():303] send: run
+2023-01-08 10:54:38,052 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: check_version
+2023-01-08 10:54:38,053 INFO    SenderThread:26421 [dir_watcher.py:__init__():216] watching files in: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files
+2023-01-08 10:54:38,053 INFO    SenderThread:26421 [sender.py:_start_run_threads():928] run started: 2zv35ry9 with start time 1673171677.481281
+2023-01-08 10:54:38,053 DEBUG   SenderThread:26421 [sender.py:send():303] send: summary
+2023-01-08 10:54:38,054 INFO    SenderThread:26421 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 10:54:38,054 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: check_version
+2023-01-08 10:54:38,218 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: run_start
+2023-01-08 10:54:38,225 ERROR   HandlerThread:26421 [gpu.py:is_available():351] Error initializing NVML: Driver Not Loaded
+2023-01-08 10:54:38,225 DEBUG   HandlerThread:26421 [system_info.py:__init__():31] System info init
+2023-01-08 10:54:38,225 DEBUG   HandlerThread:26421 [system_info.py:__init__():46] System info init done
+2023-01-08 10:54:38,225 INFO    HandlerThread:26421 [system_monitor.py:start():150] Starting system monitor
+2023-01-08 10:54:38,226 INFO    SystemMonitor:26421 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-08 10:54:38,226 INFO    HandlerThread:26421 [system_monitor.py:probe():171] Collecting system info
+2023-01-08 10:54:38,226 INFO    SystemMonitor:26421 [interfaces.py:start():168] Started cpu
+2023-01-08 10:54:38,227 INFO    SystemMonitor:26421 [interfaces.py:start():168] Started disk
+2023-01-08 10:54:38,227 INFO    SystemMonitor:26421 [interfaces.py:start():168] Started memory
+2023-01-08 10:54:38,227 INFO    SystemMonitor:26421 [interfaces.py:start():168] Started network
+2023-01-08 10:54:38,252 DEBUG   HandlerThread:26421 [system_info.py:probe():195] Probing system
+2023-01-08 10:54:38,253 DEBUG   HandlerThread:26421 [system_info.py:_probe_git():180] Probing git
+2023-01-08 10:54:38,257 DEBUG   HandlerThread:26421 [system_info.py:_probe_git():188] Probing git done
+2023-01-08 10:54:38,257 DEBUG   HandlerThread:26421 [system_info.py:probe():241] Probing system done
+2023-01-08 10:54:38,257 DEBUG   HandlerThread:26421 [system_monitor.py:probe():180] {'os': 'Linux-5.15.0-57-generic-x86_64-with-glibc2.35', 'python': '3.10.9', 'heartbeatAt': '2023-01-08T09:54:38.252623', 'startedAt': '2023-01-08T09:54:37.475769', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py', 'codePath': 'src/preprocessing/upload_dataset_splits.py', 'git': {'remote': 'https://github.com/WestedCrean/master-thesis.git', 'commit': 'a386f57bb8b9dc193cead1daec07db2584934d3c'}, 'email': 'wikflis@gmail.com', 'root': '/home/wiktor/code/master-thesis', 'host': 'wiktor-on-linux', 'username': 'wiktor', 'executable': '/home/wiktor/.pyenv/versions/master-thesis/bin/python', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 2753.77775, 'min': 2200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3900.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 4425.509, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3634.935, 'min': 2200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3900.0}, {'current': 3900.0, 'min': 2200.0, 'max': 3900.0}], 'disk': {'total': 208.0059356689453, 'used': 116.9614486694336}, 'memory': {'total': 31.296764373779297}}
+2023-01-08 10:54:38,257 INFO    HandlerThread:26421 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-08 10:54:38,257 INFO    HandlerThread:26421 [system_monitor.py:probe():184] Publishing system info
+2023-01-08 10:54:38,257 DEBUG   HandlerThread:26421 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-01-08 10:54:38,257 DEBUG   HandlerThread:26421 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-08 10:54:38,258 INFO    HandlerThread:26421 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-08 10:54:38,274 DEBUG   SenderThread:26421 [sender.py:send():303] send: files
+2023-01-08 10:54:38,274 INFO    SenderThread:26421 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-08 10:54:38,278 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-08 10:54:38,278 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: stop_status
+2023-01-08 10:54:38,576 DEBUG   SenderThread:26421 [sender.py:send():303] send: telemetry
+2023-01-08 10:54:39,055 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-summary.json
+2023-01-08 10:54:39,055 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/requirements.txt
+2023-01-08 10:54:39,056 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-metadata.json
+2023-01-08 10:54:40,250 INFO    Thread-16 :26421 [upload_job.py:push():143] Uploaded file /tmp/tmpazx_zji2wandb/33a2xpcs-wandb-metadata.json
+2023-01-08 10:54:41,262 DEBUG   SenderThread:26421 [sender.py:send():303] send: exit
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:send_exit():442] handling exit code: 1
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:send_exit():444] handling runtime: 3
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:send_exit():450] send defer
+2023-01-08 10:54:41,262 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,262 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-08 10:54:41,262 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-08 10:54:41,262 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 1
+2023-01-08 10:54:41,262 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-08 10:54:41,263 DEBUG   SystemMonitor:26421 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-08 10:54:41,263 DEBUG   SystemMonitor:26421 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-08 10:54:41,263 DEBUG   SystemMonitor:26421 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [interfaces.py:finish():175] Joined cpu
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [interfaces.py:finish():175] Joined disk
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [interfaces.py:finish():175] Joined memory
+2023-01-08 10:54:41,263 INFO    HandlerThread:26421 [interfaces.py:finish():175] Joined network
+2023-01-08 10:54:41,263 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 2
+2023-01-08 10:54:41,264 DEBUG   SenderThread:26421 [sender.py:send():303] send: stats
+2023-01-08 10:54:41,264 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,264 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-08 10:54:41,264 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 3
+2023-01-08 10:54:41,264 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,264 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-08 10:54:41,264 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-08 10:54:41,264 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 4
+2023-01-08 10:54:41,264 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,264 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-08 10:54:41,264 DEBUG   SenderThread:26421 [sender.py:send():303] send: summary
+2023-01-08 10:54:41,265 INFO    SenderThread:26421 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-08 10:54:41,265 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,265 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-08 10:54:41,265 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 5
+2023-01-08 10:54:41,265 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,265 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-08 10:54:41,265 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,265 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-08 10:54:41,571 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 6
+2023-01-08 10:54:41,571 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:41,571 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-08 10:54:41,571 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:41,571 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-08 10:54:42,055 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/config.yaml
+2023-01-08 10:54:42,055 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-summary.json
+2023-01-08 10:54:42,056 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_created():275] file/dir created: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/output.log
+2023-01-08 10:54:42,262 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-08 10:54:44,056 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/output.log
+2023-01-08 10:54:45,245 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 7
+2023-01-08 10:54:45,246 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: poll_exit
+2023-01-08 10:54:45,246 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:45,246 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-08 10:54:45,246 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:45,247 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-08 10:54:45,247 INFO    SenderThread:26421 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-08 10:54:46,056 INFO    Thread-13 :26421 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/output.log
+2023-01-08 10:54:46,057 INFO    SenderThread:26421 [dir_watcher.py:finish():392] scan: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files
+2023-01-08 10:54:46,057 INFO    SenderThread:26421 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-summary.json wandb-summary.json
+2023-01-08 10:54:46,057 INFO    SenderThread:26421 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/config.yaml config.yaml
+2023-01-08 10:54:46,060 INFO    SenderThread:26421 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/output.log output.log
+2023-01-08 10:54:46,060 INFO    SenderThread:26421 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-metadata.json wandb-metadata.json
+2023-01-08 10:54:46,062 INFO    SenderThread:26421 [dir_watcher.py:finish():406] scan save: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/requirements.txt requirements.txt
+2023-01-08 10:54:46,064 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 8
+2023-01-08 10:54:46,066 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:46,066 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-08 10:54:46,066 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:46,067 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-08 10:54:46,067 INFO    SenderThread:26421 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-08 10:54:47,061 INFO    Thread-17 :26421 [upload_job.py:push():143] Uploaded file /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/wandb-summary.json
+2023-01-08 10:54:47,072 INFO    Thread-20 :26421 [upload_job.py:push():143] Uploaded file /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/requirements.txt
+2023-01-08 10:54:47,087 INFO    Thread-18 :26421 [upload_job.py:push():143] Uploaded file /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/config.yaml
+2023-01-08 10:54:47,117 INFO    Thread-19 :26421 [upload_job.py:push():143] Uploaded file /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/files/output.log
+2023-01-08 10:54:47,263 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: keepalive
+2023-01-08 10:54:47,318 INFO    Thread-12 (_thread_body):26421 [sender.py:transition_state():463] send defer: 9
+2023-01-08 10:54:47,318 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:47,318 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-08 10:54:47,319 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:47,319 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-08 10:54:47,319 INFO    SenderThread:26421 [file_pusher.py:join():173] waiting for file pusher
+2023-01-08 10:54:47,319 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 10
+2023-01-08 10:54:47,319 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:47,319 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-08 10:54:47,319 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:47,319 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-08 10:54:47,486 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 11
+2023-01-08 10:54:47,487 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:47,487 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-08 10:54:47,487 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:47,487 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-08 10:54:47,487 INFO    SenderThread:26421 [sender.py:transition_state():463] send defer: 12
+2023-01-08 10:54:47,488 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: defer
+2023-01-08 10:54:47,488 DEBUG   SenderThread:26421 [sender.py:send():303] send: final
+2023-01-08 10:54:47,488 INFO    HandlerThread:26421 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-08 10:54:47,488 DEBUG   SenderThread:26421 [sender.py:send():303] send: footer
+2023-01-08 10:54:47,488 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: defer
+2023-01-08 10:54:47,488 INFO    SenderThread:26421 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-08 10:54:47,489 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-08 10:54:47,489 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: poll_exit
+2023-01-08 10:54:47,490 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: server_info
+2023-01-08 10:54:47,490 DEBUG   SenderThread:26421 [sender.py:send_request():317] send_request: server_info
+2023-01-08 10:54:47,490 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-08 10:54:47,492 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-08 10:54:48,066 INFO    MainThread:26421 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-08 10:54:48,066 INFO    MainThread:26421 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-08 10:54:48,066 INFO    MainThread:26421 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-08 10:54:48,066 DEBUG   HandlerThread:26421 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-08 10:54:48,066 INFO    HandlerThread:26421 [handler.py:finish():814] shutting down handler
+2023-01-08 10:54:48,488 INFO    WriterThread:26421 [datastore.py:close():279] close: /home/wiktor/code/master-thesis/src/wandb/run-20230108_105437-2zv35ry9/run-2zv35ry9.wandb
+2023-01-08 10:54:49,065 INFO    SenderThread:26421 [sender.py:finish():1331] shutting down sender
+2023-01-08 10:54:49,066 INFO    SenderThread:26421 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-08 10:54:49,066 INFO    SenderThread:26421 [file_pusher.py:join():173] waiting for file pusher
+2023-01-08 10:54:49,068 INFO    MainThread:26421 [internal.py:handle_exit():77] Internal process exited

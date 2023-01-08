@@ -1,0 +1,22 @@
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 58, in <module>
+    upload_dataset_splits()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 48, in upload_dataset_splits
+    split_save_path = save_split_data(split_data, output_path, label, split)
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 19, in save_split_data
+    np.savez_compressed(str(save_path), data)
+  File "<__array_function__ internals>", line 200, in savez_compressed
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/numpy/lib/npyio.py", line 686, in savez_compressed
+    _savez(file, args, kwds, True)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/numpy/lib/npyio.py", line 712, in _savez
+    zipf = zipfile_factory(file, mode="w", compression=compression)
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/numpy/lib/npyio.py", line 103, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/zipfile.py", line 1249, in __init__
+    self.fp = io.open(file, filemode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wiktor/code/master-thesis/src/artifacts/splits/train/artifacts/letters:v0/27.npz'
+Processing file /home/wiktor/code/master-thesis/src/artifacts/letters:v0/27.npz
+Processing label artifacts/letters:v0/27
+Output path: artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/artifacts/letters:v0/27.npz

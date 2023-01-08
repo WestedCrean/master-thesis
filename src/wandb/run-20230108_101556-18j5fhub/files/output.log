@@ -1,0 +1,14 @@
+Processing label 10
+Processing label 11
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_raw_dataset.py", line 72, in <module>
+    upload_raw_dataset()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_raw_dataset.py", line 29, in upload_raw_dataset
+    create_npy_files(label_path, output_path, label=l)
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 17, in create_npy_files
+    img_array = np.array([np.array(Image.open(img_name)) for img_name in img_names])
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 17, in <listcomp>
+    img_array = np.array([np.array(Image.open(img_name)) for img_name in img_names])
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/PIL/Image.py", line 3140, in open
+    prefix = fp.read(16)
+KeyboardInterrupt

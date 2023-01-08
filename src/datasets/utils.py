@@ -3,6 +3,7 @@ import wandb
 import tensorflow as tf
 import pathlib
 from loguru import logger
+import numpy as np
 
 char_id_to_class_name = OrderedDict(
     {
@@ -101,6 +102,15 @@ char_id_to_class_name = OrderedDict(
     }
 )
 
+def persist_labels(output_path: pathlib.Path):
+    '''
+    Writes class labels to a .npy file as a numpy array
+    '''
+    class_labels = list(char_id_to_class_name.values())
+    output_name = str(output_path / "labels.npy")
+    print(f"Writing class labels to {output_name}")
+    np.save(output_name, class_labels)
+    return output_name
 
 def get_class_name(char_id: str):
     return char_id_to_class_name[int(char_id)]
