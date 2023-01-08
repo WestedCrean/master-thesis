@@ -5,7 +5,7 @@ import shutil
 import random
 from loguru import logger
 
-from .utils import create_train_test_sets
+from ..utils import create_train_test_sets
 
 
 def create_latin_letters_dataset():
