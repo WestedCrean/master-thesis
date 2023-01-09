@@ -2,6 +2,11 @@ data/*
 *.rar
 # python
 *.pyc
+
+# wandb logs/folders/artifacts
+wandb
+*/wandb
+src/wandb
 notebooks/wandb
 
 */artifacts

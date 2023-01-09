@@ -11,12 +11,18 @@ import wandb
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from datasets.utils import persist_labels
-from utils import measure_folder_size, create_archive, unpack_archive, save_split_data
-        
+from preprocessing.utils import (
+    measure_folder_size,
+    create_archive,
+    unpack_archive,
+    save_split_data,
+)
+
+
 def upload_dataset_splits():
     base_dir = pathlib.Path().resolve().parent
     run = wandb.init(project="master-thesis", job_type="data_split")
-    
+
     artifact = run.use_artifact("letters:latest")
     artifact_path = artifact.download()
 
@@ -27,7 +33,7 @@ def upload_dataset_splits():
             f"letters_{split}", type="dataset", description=f"Letters {split} dataset"
         )
         splits_artifacts[split] = split_artifact
-    
+
     class_archive = [str(l) for l in pathlib.Path(artifact_path).iterdir()]
     print(f"Found {len(class_archive)} classes")
     output_path = (pathlib.Path(artifact_path).parent / "splits").resolve()
@@ -41,15 +47,17 @@ def upload_dataset_splits():
 
         for split, split_ratio in zip(["train", "test", "val"], [0.8, 0.1, 0.1]):
             # split data into train, test and val with 80%, 10% and 10% respectively
-            split_paths = file_paths[:int(len(file_paths) * split_ratio)]
+            split_paths = file_paths[: int(len(file_paths) * split_ratio)]
             split_save_path = save_split_data(split_paths, output_path, label, split)
-    
+
     print("Creating split artifacts")
 
     print(f"Output path: {output_path.resolve()}")
     split_artifact = wandb.Artifact(
-            f"letters_splits", type="transformed_data", description=f"Letters dataset split into train, test and val"
-        )
+        f"letters_splits",
+        type="transformed_data",
+        description=f"Letters dataset split into train, test and val",
+    )
 
     for split in ["train", "test", "val"]:
         split_save_path = (output_path / split).resolve()
@@ -60,6 +68,7 @@ def upload_dataset_splits():
     print("Uploading split artifacts")
     run.log_artifact(split_artifact)
     run.finish()
+
 
 if __name__ == "__main__":
     upload_dataset_splits()
