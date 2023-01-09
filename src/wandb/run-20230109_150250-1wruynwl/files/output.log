@@ -1,7 +1,0 @@
-[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
-Traceback (most recent call last):
-  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 68, in <module>
-    upload_dataset_splits()
-  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 32, in upload_dataset_splits
-    print(f"Found {len(files)} files")
-NameError: name 'files' is not defined
