@@ -1,0 +1,75 @@
+
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Found 35 classes
+Processing label 32
+Found 7923 files in archive
+Processing label 10
+Found 12185 files in archive
+Processing label 67
+Found 18304 files in archive
+Processing label 33
+Found 24416 files in archive
+Processing label 22
+Found 30510 files in archive
+Processing label 18
+Found 36658 files in archive
+Processing label 66
+Found 42775 files in archive
+Processing label 20
+Found 48885 files in archive
+Processing label 29
+Found 56067 files in archive
+Processing label 65
+Found 62196 files in archive
+Processing label 19
+Found 68318 files in archive
+Processing label 69
+Found 74408 files in archive
+Processing label 28
+Found 80513 files in archive
+Processing label 26
+Found 86598 files in archive
+Processing label 12
+Found 92656 files in archive
+Processing label 23
+Found 98763 files in archive
+Processing label 31
+Found 104868 files in archive
+Processing label 15
+Found 110980 files in archive
+Processing label 21
+Found 117093 files in archive
+Processing label 64
+Found 123254 files in archive
+Processing label 14
+Found 130408 files in archive
+Processing label 70
+Found 136501 files in archive
+Processing label 62
+Found 142627 files in archive
+Processing label 13
+Found 148734 files in archive
+Processing label 17
+Found 155904 files in archive
+Processing label 30
+Found 163062 files in archive
+Processing label 34
+Found 169176 files in archive
+Processing label 25
+Found 175291 files in archive
+Processing label 11
+Found 181420 files in archive
+Processing label 27
+Found 188560 files in archive
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 64, in <module>
+    upload_dataset_splits()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 45, in upload_dataset_splits
+    split_save_path = save_split_data(split_paths, output_path, label, split)
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 30, in save_split_data
+    shutil.copy(path, output_path)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 417, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 258, in copyfile
+    if _HAS_FCOPYFILE:
+KeyboardInterrupt

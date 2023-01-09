@@ -1,0 +1,10 @@
+
+Processing label 10
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_raw_dataset.py", line 46, in <module>
+    upload_raw_dataset()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_raw_dataset.py", line 30, in upload_raw_dataset
+    data_at.add_file(output_path / f"{l}.tar.gz", name=f"{l}.tar.gz")
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/wandb/sdk/wandb_artifacts.py", line 406, in add_file
+    raise ValueError("Path is not a file: %s" % local_path)
+ValueError: Path is not a file: /home/wiktor/code/master-thesis/data/upload/10.tar.gz

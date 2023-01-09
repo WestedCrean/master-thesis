@@ -11,7 +11,7 @@ import wandb
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from datasets.utils import persist_labels
-from utils import measure_folder_size, create_npy_files
+from utils import measure_folder_size, create_archive
         
 def upload_raw_dataset():
     base_dir = pathlib.Path().resolve().parent
@@ -25,21 +25,16 @@ def upload_raw_dataset():
     for l in labels:
         print(f"Processing label {l}")
         label_path = pathlib.Path(raw_data_source) / l
-        output_path = pathlib.Path(raw_data_source).parent / "npy"
-        create_npy_files(label_path, output_path, label=l)
-        data_at.add_file(output_path / f"{l}.npz", name=f"{l}.npz")
+        output_path = pathlib.Path(raw_data_source).parent / "upload"
+        print(f"Output path: {output_path.resolve()}")
+        create_archive(label_path, output_path, label=l)
+        data_at.add_file(output_path / f"{l}.tar.gz", name=f"{l}.tar.gz")
 
     if output_path:
         print(f"Output files size: {measure_folder_size(output_path)} MB")
 
     print("Uploading raw artifact")
     run.log_artifact(data_at)
-
-    label_artifact = wandb.Artifact(f"letters_labels", type="labels")
-    label_file = persist_labels(output_path)
-    label_artifact.add_file(label_file, name="labels.npy")
-
-    run.log_artifact(label_artifact)
     run.finish()
 
 if __name__ == "__main__":

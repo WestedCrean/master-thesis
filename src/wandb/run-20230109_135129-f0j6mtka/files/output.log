@@ -1,0 +1,13 @@
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 57, in <module>
+    upload_dataset_splits()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 48, in upload_dataset_splits
+    splits_artifacts[split].add_file(split_save_path, name=f"{label}.tar.gz")
+  File "/home/wiktor/.pyenv/versions/master-thesis/lib/python3.10/site-packages/wandb/sdk/wandb_artifacts.py", line 406, in add_file
+    raise ValueError("Path is not a file: %s" % local_path)
+ValueError: Path is not a file: /home/wiktor/code/master-thesis/src/artifacts/splits/train/32
+Processing label 32
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 32 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Making archive /home/wiktor/code/master-thesis/src/artifacts/splits/train/32 from /home/wiktor/code/master-thesis/src/artifacts/splits/train

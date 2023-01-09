@@ -1,0 +1,148 @@
+
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Processing label 32
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 32 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 32 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 32 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 10
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 10 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 10 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 10 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 67
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 67 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 67 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 67 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 33
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 33 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 33 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 33 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 22
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 22 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 22 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 22 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 18
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 18 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 18 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 18 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 66
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 66 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 66 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 66 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 20
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 20 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 20 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 20 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 29
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 29 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 29 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 29 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 65
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 65 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 65 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 65 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 19
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 19 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 19 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 19 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 69
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 69 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 69 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 69 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 28
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 28 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 28 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 28 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 26
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 26 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 26 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 26 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 12
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 12 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 12 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 12 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 23
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 23 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 23 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 23 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 31
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 31 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 31 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 31 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 15
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 15 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 15 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 15 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 21
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 21 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 21 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 21 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 64
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 64 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 64 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 64 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 14
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 14 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 14 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 14 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 70
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 70 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 70 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 70 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 62
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 62 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 62 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 62 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 13
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 13 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 13 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 13 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 17
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 17 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 17 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 17 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 30
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 30 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving test data for label 30 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving val data for label 30 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Processing label 34
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 34 to /home/wiktor/code/master-thesis/src/artifacts/splits
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 57, in <module>
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 47, in upload_dataset_splits
+    splits_artifacts[split].add_file(split_save_path, name=f"{label}.tar.gz")
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 32, in save_split_data
+    return shutil.make_archive(output_path, "gztar", output_path)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 417, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 239, in copyfile
+    st = _stat(fn)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 219, in _stat
+    return fn.stat() if isinstance(fn, os.DirEntry) else os.stat(fn)
+KeyboardInterrupt

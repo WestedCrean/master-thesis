@@ -1,0 +1,21 @@
+[34m[1mwandb[39m[22m:   35 of 35 files downloaded.
+Traceback (most recent call last):
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 57, in <module>
+    upload_dataset_splits()
+  File "/home/wiktor/code/master-thesis/src/preprocessing/upload_dataset_splits.py", line 47, in upload_dataset_splits
+    split_save_path = save_split_data(split_paths, output_path, label, split)
+  File "/home/wiktor/code/master-thesis/src/preprocessing/utils.py", line 38, in save_split_data
+    shutil.make_archive(output_path, "gztar", split_file)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 1124, in make_archive
+    filename = func(base_name, base_dir, **kwargs)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/shutil.py", line 952, in _make_tarball
+    tar.add(base_dir, arcname, filter=_set_uid_gid)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/tarfile.py", line 1986, in add
+    tarinfo = self.gettarinfo(name, arcname)
+  File "/home/wiktor/.pyenv/versions/3.10.9/lib/python3.10/tarfile.py", line 1865, in gettarinfo
+    statres = os.lstat(name)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wiktor/code/master-thesis/src/artifacts/splits/train/32.tar.gz/.'
+Processing label 32.tar.gz
+Output path: /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data for label 32.tar.gz to /home/wiktor/code/master-thesis/src/artifacts/splits
+Saving train data to /home/wiktor/code/master-thesis/src/artifacts/splits/train/32.tar.gz

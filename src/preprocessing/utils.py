@@ -5,31 +5,31 @@ import shutil
 import random
 from loguru import logger
 from PIL import Image
+from typing import List
 
 
 def measure_folder_size(path: pathlib.Path) -> int:
     # calculate size of folder in megabytes
     return sum(f.stat().st_size for f in path.glob('**/*') if f.is_file()) / 1024 / 1024
 
-def save_split_data(data, output_path, label, split) -> str:
+def create_archive(src_path : pathlib.Path, output_path: pathlib.Path, label: str) -> str:
     output_path.mkdir(parents=True, exist_ok=True)
-    file_path = output_path / split
-    file_path.mkdir(parents=True, exist_ok=True)
-    file_path = file_path / f"{label}.npz"
-    save_path = file_path.resolve()
-    print(f"Saving {split} data to {save_path}")
-    np.savez_compressed(str(save_path), data)
-    return save_path
+    shutil.make_archive(output_path / f"{label}", "gztar", src_path)
+    return str(output_path / f"{label}.tar.gz")
 
-def create_npy_files(src_path : pathlib.Path, output_path: pathlib.Path, label: str) -> str:
+def unpack_archive(filename: pathlib.Path, output_path: pathlib.Path) -> List[pathlib.Path]:
+    shutil.unpack_archive(filename, output_path, format="gztar")
+    return list(output_path.iterdir())
+
+def save_split_data(split_paths: List[pathlib.Path], output_path: pathlib.Path, label, split) -> str:
+    output_path = output_path / split / label
     output_path.mkdir(parents=True, exist_ok=True)
-    img_names = [ str(img_name) for img_name in src_path.iterdir() ]
-    img_array = np.array([np.array(Image.open(img_name)) for img_name in img_names])
-    np.savez_compressed(output_path / f"{label}.npz", img_array)
+    output_path.resolve()
 
-def unpack_npz_file(path: pathlib.Path) -> np.ndarray:
-    path = str(pathlib.Path(path).resolve())
-    return np.load(path)["arr_0"]
+    for path in split_paths:
+        shutil.copy(path, output_path)
+
+    return output_path #shutil.make_archive(output_path, "gztar", output_path)
 
 def train_test_split(data: list, test_ratio: float = 0.2):
     return np.split(np.array(data), [int(len(data) * (1 - test_ratio))])

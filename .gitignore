@@ -3,3 +3,7 @@ data/*
 # python
 *.pyc
 notebooks/wandb
+
+*/artifacts
+src/artifacts
+notebooks/artifacts
