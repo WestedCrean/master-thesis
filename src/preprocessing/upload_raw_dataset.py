@@ -1,26 +1,25 @@
 import os
 import sys
-from random import shuffle
-
+import enum
 import pathlib
-import numpy as np
-from loguru import logger
 import wandb
 
 # add the parent directory to the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from datasets.utils import persist_labels
 from preprocessing.utils import measure_folder_size, create_archive
 
 
-def upload_raw_dataset():
+class Labels(enum.Enum):
+    lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
+    phcd_paper = [str(i) for i in range(0, 90)]
+
+
+def upload_raw_dataset(label_type: Labels = Labels.lowercase):
     base_dir = pathlib.Path().resolve().parent
     raw_data_source = f"{base_dir}/data/all_characters"
 
-    labels = [str(i) for i in range(10, 36)] + [
-        str(i) for i in range(62, 71)
-    ]  # only lowercase
+    labels = label_type.value
     run = wandb.init(project="master-thesis", job_type="upload")
 
     data_at = wandb.Artifact(f"letters", type=f"raw_data")
