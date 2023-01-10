@@ -1,8 +1,7 @@
 import click
-from pathlib import Path
 import wandb
-from preprocessing import upload_raw_dataset, upload_dataset_splits
-from loguru import logger
+from preprocessing.upload_raw_dataset import upload_raw_dataset, Labels
+from preprocessing.upload_dataset_splits import upload_dataset_splits
 
 PROJECT_NAME = "master-thesis"
 
@@ -57,13 +56,19 @@ def delete_artifacts():
 
 
 @cli.command()
-def create_training_data():
+@click.option(
+    "--label-type",
+    type=click.Choice(["lowercase", "phcd_paper"]),
+    default="lowercase",
+)
+def create_training_data(label_type: str):
     """
     Uploads raw data & splits for training to wandb
     master_thesis project
     """
     print("Creating training data...")
-    upload_raw_dataset()
+    print(f"Using label type: {label_type}")
+    upload_raw_dataset(label_type=Labels[label_type])
     upload_dataset_splits()
 
 

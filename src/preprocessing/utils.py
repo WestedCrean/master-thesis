@@ -1,27 +1,33 @@
 import pathlib
-import os
 import numpy as np
 import shutil
-import random
 from loguru import logger
-from PIL import Image
 from typing import List
 
 
 def measure_folder_size(path: pathlib.Path) -> int:
     # calculate size of folder in megabytes
-    return sum(f.stat().st_size for f in path.glob('**/*') if f.is_file()) / 1024 / 1024
+    return sum(f.stat().st_size for f in path.glob("**/*") if f.is_file()) / 1024 / 1024
 
-def create_archive(src_path : pathlib.Path, output_path: pathlib.Path, label: str) -> str:
+
+def create_archive(
+    src_path: pathlib.Path, output_path: pathlib.Path, label: str
+) -> str:
     output_path.mkdir(parents=True, exist_ok=True)
     shutil.make_archive(output_path / f"{label}", "gztar", src_path)
     return str(output_path / f"{label}.tar.gz")
 
-def unpack_archive(filename: pathlib.Path, output_path: pathlib.Path) -> List[pathlib.Path]:
+
+def unpack_archive(
+    filename: pathlib.Path, output_path: pathlib.Path
+) -> List[pathlib.Path]:
     shutil.unpack_archive(filename, output_path, format="gztar")
     return list(output_path.iterdir())
 
-def save_split_data(split_paths: List[pathlib.Path], output_path: pathlib.Path, label, split) -> str:
+
+def save_split_data(
+    split_paths: List[pathlib.Path], output_path: pathlib.Path, label, split
+) -> str:
     output_path = output_path / split / label
     output_path.mkdir(parents=True, exist_ok=True)
     output_path.resolve()
@@ -29,7 +35,8 @@ def save_split_data(split_paths: List[pathlib.Path], output_path: pathlib.Path, 
     for path in split_paths:
         shutil.copy(path, output_path)
 
-    return output_path #shutil.make_archive(output_path, "gztar", output_path)
+    return output_path  # shutil.make_archive(output_path, "gztar", output_path)
+
 
 def train_test_split(data: list, test_ratio: float = 0.2):
     return np.split(np.array(data), [int(len(data) * (1 - test_ratio))])
