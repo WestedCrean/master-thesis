@@ -8,6 +8,7 @@ import wandb
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from preprocessing.utils import measure_folder_size, create_archive
+from datasets.utils import persist_labels
 
 
 class Labels(enum.Enum):
@@ -37,6 +38,14 @@ def upload_raw_dataset(label_type: Labels = Labels.lowercase):
 
     print("Uploading raw artifact")
     run.log_artifact(data_at)
+
+    # log labels
+
+    label_artifact = wandb.Artifact(f"letters_labels", type="labels")
+    label_file = persist_labels(output_path)
+    label_artifact.add_file(label_file, name="labels.npy")
+    run.log_artifact(label_artifact)
+
     run.finish()
 
 
