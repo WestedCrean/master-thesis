@@ -1,6 +1,7 @@
 import wandb
 import utils
 from pathlib import Path
+from typing import List
 
 
 def evaluate_model(model, ds_test, model_name):

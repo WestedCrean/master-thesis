@@ -3,6 +3,7 @@ import pathlib
 import shutil
 import tensorflow as tf
 import matplotlib.pyplot as plt
+from typing import List
 
 
 def load_data(run: wandb.sdk.wandb_run.Run) -> List[tf.data.Dataset]:
