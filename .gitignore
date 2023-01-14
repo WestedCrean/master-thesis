@@ -8,6 +8,10 @@ wandb
 */wandb
 src/wandb
 notebooks/wandb
+notebooks/artifacts
+artifacts
+**/artifacts
+**/wandb
 
 */artifacts
 src/artifacts
