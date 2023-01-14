@@ -49,8 +49,9 @@ def create_tf_dataset(split_path: pathlib.Path, batch_size: int = 32):
     return ds
 
 
-def preprocess_dataset(ds: tf.data.Dataset, cache: bool = True) -> tf.data.Dataset:
+def preprocess_dataset(ds: tf.data.Dataset, batch_size: int, cache: bool = True) -> tf.data.Dataset:
     ds = ds.map(lambda x, y: (tf.cast(x, tf.float32) / 255.0, y))  # normalize
+    ds = ds.unbatch().batch(batch_size)
     if cache:
         ds = ds.cache().prefetch(buffer_size=tf.data.AUTOTUNE)
     return ds
