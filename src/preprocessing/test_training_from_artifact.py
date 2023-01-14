@@ -5,23 +5,23 @@ import pathlib
 from typing import List
 
 
-def load_data(split: str = "train", labels: List[str]) -> np.ndarray:
+def load_data(run: wandb.sdk.wandb_run.Run) -> List[tf.data.Dataset]:
     """
-    Loads data from an artifact and returns it as a numpy array.
+    Downloads datasets from a wandb artifact and loads them into a list of tf.data.Datasets.
     """
-    if split not in ["train", "test", "val"]:
-        raise ValueError("Split must be either train, test or val")
 
-    artifact_name = f"letters_{split}"
-    run = wandb.init(project="master-thesis", job_type="preprocessing")
+    artifact_name = f"letters_splits_tfds"
     artifact = run.use_artifact(f"master-thesis/{artifact_name}:latest")
-    artifact_dir = artifact.download()
-    data = []
-    for label in labels:
-        data.append(
-            np.load(
-                pathlib.Path(artifact_dir) / f"{label}.npz", allow_pickle=True
-            )["arr_0"]
-        )
-    data = np.concatenate(data)
-    return data
+    artifact_dir = pathlib.Path(
+        f"./artifacts/{artifact.name.replace(':', '-')}"
+    ).resolve()
+    if not artifact_dir.exists():
+        artifact_dir = artifact.download()
+        artifact_dir = pathlib.Path(artifact_dir).resolve()
+    
+    output_list = []
+    for split in ["train", "test", "val"]:
+        ds = tf.data.Dataset.load(str(artifact_dir / split), compression="GZIP")
+        output_list.append(ds)
+    
+    return output_list

@@ -5,12 +5,12 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 
-def load_data(run: wandb.sdk.wandb_run.Run) -> pathlib.Path:
+def load_data(run: wandb.sdk.wandb_run.Run) -> List[tf.data.Dataset]:
     """
-    Unpacks data from an artifact into a folder and returns the path to the folder.
+    Downloads datasets from a wandb artifact and loads them into a list of tf.data.Datasets.
     """
 
-    artifact_name = f"letters_splits"
+    artifact_name = f"letters_splits_tfds"
     artifact = run.use_artifact(f"master-thesis/{artifact_name}:latest")
     artifact_dir = pathlib.Path(
         f"./artifacts/{artifact.name.replace(':', '-')}"
@@ -18,19 +18,22 @@ def load_data(run: wandb.sdk.wandb_run.Run) -> pathlib.Path:
     if not artifact_dir.exists():
         artifact_dir = artifact.download()
         artifact_dir = pathlib.Path(artifact_dir).resolve()
-        for split_file in artifact_dir.iterdir():
-            if split_file.name.endswith(".tar.gz"):
-                split = split_file.name.replace(".tar.gz", "")
-                shutil.unpack_archive(split_file, artifact_dir / split, format="gztar")
-
-    return [artifact_dir / split for split in ["train", "test", "val"]]
+    
+    output_list = []
+    for split in ["train", "test", "val"]:
+        ds = tf.data.Dataset.load(str(artifact_dir / split), compression="GZIP")
+        output_list.append(ds)
+    
+    return output_list
 
 
 def get_number_of_classes(ds: tf.data.Dataset) -> int:
     """
     Returns the number of classes in a dataset.
     """
-    return len(ds.class_names)
+    labels_iterator= ds.map(lambda x, y: y).as_numpy_iterator()
+    labels = np.concatenate(list(labels_iterator))
+    return len(np.unique(labels))
 
 
 def create_tf_dataset(split_path: pathlib.Path, batch_size: int = 32):
