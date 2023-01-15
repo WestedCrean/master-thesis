@@ -5,7 +5,7 @@ import pathlib
 from typing import List
 
 
-def load_data(run: wandb.sdk.wandb_run.Run) -> List[tf.data.Dataset]:
+def load_data(run) -> List[tf.data.Dataset]:
     """
     Downloads datasets from a wandb artifact and loads them into a list of tf.data.Datasets.
     """
@@ -18,10 +18,10 @@ def load_data(run: wandb.sdk.wandb_run.Run) -> List[tf.data.Dataset]:
     if not artifact_dir.exists():
         artifact_dir = artifact.download()
         artifact_dir = pathlib.Path(artifact_dir).resolve()
-    
+
     output_list = []
     for split in ["train", "test", "val"]:
         ds = tf.data.Dataset.load(str(artifact_dir / split), compression="GZIP")
         output_list.append(ds)
-    
+
     return output_list
