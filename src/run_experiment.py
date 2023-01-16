@@ -2,7 +2,7 @@ import os
 import warnings
 import click
 import wandb
-from models import baseline_phcd, resnet, efficientnet
+from models import baseline_phcd, resnet, efficientnet, test_model
 from training.sweep import launch_sweep, base_sweep_config
 
 
@@ -14,13 +14,19 @@ def main():
 @main.command()
 @click.option(
     "--model",
-    type=click.Choice(["baseline", "resnet", "efficientnet"], case_sensitive=False),
+    type=click.Choice(
+        ["test", "baseline", "resnet", "efficientnet"], case_sensitive=False
+    ),
     required=True,
 )
 def run(model):
     train_fn = None
     defaults = None
-    if model == "baseline":
+
+    if model == "test":
+        defaults = test_model.get_defaults()
+        train_fn = test_model.train
+    elif model == "baseline":
         defaults = baseline_phcd.get_defaults()
         train_fn = baseline_phcd.train
 
@@ -38,7 +44,9 @@ def run(model):
 @main.command()
 @click.option(
     "--model",
-    type=click.Choice(["baseline", "resnet", "efficientnet"], case_sensitive=False),
+    type=click.Choice(
+        ["test", "baseline", "resnet", "efficientnet"], case_sensitive=False
+    ),
     required=True,
 )
 def run_sweep(model):
@@ -47,7 +55,11 @@ def run_sweep(model):
     """
     train_fn = None
     current_sweep_config = None
-    if model == "baseline":
+    if model == "test":
+        current_sweep_config = test_model.get_sweep_params()
+        train_fn = test_model.train
+
+    elif model == "baseline":
         current_sweep_config = baseline_phcd.get_sweep_params()
         train_fn = baseline_phcd.train
 
@@ -59,7 +71,7 @@ def run_sweep(model):
         current_sweep_config = efficientnet.get_sweep_params()
         train_fn = efficientnet.train
 
-    launch_sweep(train_fn, number_of_runs=20, sweep_config=current_sweep_config)
+    launch_sweep(train_fn, number_of_runs=2, sweep_config=current_sweep_config)
 
 
 if __name__ == "__main__":
