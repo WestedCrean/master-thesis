@@ -1,10 +1,9 @@
 import os
 import warnings
 import click
-from loguru import logger
 import wandb
-
-from datasets import log_dataset_to_wandb
+from models import baseline_phcd, resnet, efficientnet
+from training.sweep import launch_sweep, base_sweep_config
 
 
 @click.group()
@@ -13,52 +12,54 @@ def main():
 
 
 @main.command()
-@click.argument("experiment_name", type=str)
-def upload_dataset_to_wandb(experiment_name):
-    """Runs experiment given by experiment_name"""
-    logger.info(f'Uploading dataset from experiment "{experiment_name}"')
+@click.option(
+    "--model",
+    type=click.Choice(["baseline", "resnet", "efficientnet"], case_sensitive=False),
+    required=True,
+)
+def run(model):
+    train_fn = None
+    defaults = None
+    if model == "baseline":
+        defaults = baseline_phcd.get_defaults()
+        train_fn = baseline_phcd.train
 
-    if experiment_name == "numbers":
-        log_dataset_to_wandb(
-            "numbers_data", f"../data/{experiment_name}", experiment_name
-        )
+    elif model == "resnet":
+        defaults = resnet.get_defaults()
+        train_fn = resnet.train
 
-    logger.info(f'Finished experiment "{experiment_name}"')
+    elif model == "efficientnet":
+        defaults = efficientnet.get_defaults()
+        train_fn = efficientnet.train
 
-
-@main.command()
-@click.argument("experiment_name", type=str)
-def run_experiment(experiment_name):
-    """Runs experiment given by experiment_name"""
-    logger.info(f'Running experiment "{experiment_name}"')
-
-    if experiment_name == "numbers":
-        from experiments.numbers_experiment import run
-
-        run()
-
-    elif experiment_name == "cnn":
-        from experiments.cnn_experiment import run
-
-        run()
-
-    elif experiment_name == "lowercase_diacritics":
-        from experiments.lowercase_latin_letters_with_diacritics import run
-
-        run(clear_project_before=True)
-    logger.info(f'Finished experiment "{experiment_name}"')
+    train_fn(config=defaults, job_type="training")
 
 
 @main.command()
-@click.argument("experiment_name", type=str)
-def clear_experiment(experiment_name):
-    """Deletes all runs from wandb experiments"""
-    logger.info(f"Cleaning wandb project {experiment_name}")
-    api = wandb.Api()
-    runs = api.runs(f"gratkadlafana/phcd_numbers")
-    for run in runs:
-        run.delete()
-    logger.info("Project runs deleted")
+@click.option(
+    "--model",
+    type=click.Choice(["baseline", "resnet", "efficientnet"], case_sensitive=False),
+    required=True,
+)
+def run_sweep(model):
+    """
+    Runs a wandb sweep
+    """
+    train_fn = None
+    current_sweep_config = None
+    if model == "baseline":
+        current_sweep_config = baseline_phcd.get_sweep_params()
+        train_fn = baseline_phcd.train
+
+    elif model == "resnet":
+        current_sweep_config = resnet.get_sweep_params()
+        train_fn = resnet.train
+
+    elif model == "efficientnet":
+        current_sweep_config = efficientnet.get_sweep_params()
+        train_fn = efficientnet.train
+
+    launch_sweep(train_fn, number_of_runs=20, sweep_config=current_sweep_config)
 
 
 if __name__ == "__main__":

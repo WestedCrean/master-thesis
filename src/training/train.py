@@ -64,3 +64,19 @@ def evaluate_diacritics_performance(model, ds_test):
         }
 
     wandb.log(diacritics_acc)
+
+
+def save_model(model, model_name, run):
+    """
+    Save model to artifacts directory
+    """
+    Path("./artifacts").mkdir(parents=True, exist_ok=True)
+    model.save(f"./artifacts/{model_name}.h5")
+
+    # save artifact to wandb
+    artifact = wandb.Artifact(name=model_name, type="model")
+
+    # save best model to artifact
+    artifact.add_file(f"./artifacts/{model_name}.h5")
+    run.log_artifact(artifact)
+    run.finish()
