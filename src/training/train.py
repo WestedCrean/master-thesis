@@ -55,7 +55,7 @@ def evaluate_diacritics_performance(model, ds_test):
 
     diacritics_acc = {}
     for diacritic_label in diacritics.keys():
-        ds_test_diacritic = ds_test.filter(lambda x, y: y == diacritic_label)
+        ds_test_diacritic = ds_test.filter(lambda x, y: tf.equal(y, diacritic_label))
         test_loss, test_acc = model.evaluate(ds_test_diacritic)
         diacritics_acc[diacritic_label] = {
             "loss": test_loss,
