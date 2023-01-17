@@ -8,7 +8,6 @@ export ACCELERATOR="type=nvidia-tesla-v100,count=1"
 # Notebook parameters
 export INPUT_NOTEBOOK_PATH="master-thesis/notebooks/neural_architecture_search.ipynb"
 export OUTPUT_NOTEBOOK_PATH="master-thesis/notebooks/neural_architecture_search-output.ipynb"
-export PARAMETERS_FILE="params.yaml" # Optional
 export PARAMETERS="-p batch_size 128 -p epochs 40"  # Optional
 export STARTUP_SCRIPT="pip install wandb && papermill ${INPUT_NOTEBOOK_PATH} ${OUTPUT_NOTEBOOK_PATH}"
 
