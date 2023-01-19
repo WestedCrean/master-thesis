@@ -26,11 +26,9 @@ def upload_raw_dataset(label_type: Labels = Labels.lowercase):
     labels = label_type.value
     name = label_type.name
 
-    print(f"Using label_type: {name}")
-    return
     run = wandb.init(project="master-thesis", job_type="upload")
 
-    data_at = wandb.Artifact(f"letters", type=f"raw_data")
+    data_at = wandb.Artifact(name, type=f"raw_data")
     output_path = None
     for l in labels:
         print(f"Processing label {l}")
@@ -48,7 +46,7 @@ def upload_raw_dataset(label_type: Labels = Labels.lowercase):
 
     # log labels
 
-    label_artifact = wandb.Artifact(f"letters_labels", type="labels")
+    label_artifact = wandb.Artifact(f"{name}_labels", type="labels")
     label_file = persist_labels(output_path)
     label_artifact.add_file(label_file, name="labels.npy")
     run.log_artifact(label_artifact)

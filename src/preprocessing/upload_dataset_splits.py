@@ -10,12 +10,12 @@ import wandb
 # add the parent directory to the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from datasets.utils import persist_labels
 from preprocessing.utils import (
     measure_folder_size,
     create_archive,
     unpack_archive,
     save_split_data,
+    persist_labels,
 )
 
 

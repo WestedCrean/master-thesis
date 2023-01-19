@@ -69,7 +69,7 @@ def delete_artifacts():
             "phcd_paper",
         ]
     ),
-    default="lowercase",
+    required=True,
 )
 def create_training_data(label_type: str, all: bool):
     """
