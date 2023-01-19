@@ -1,7 +1,7 @@
 import pathlib
 import numpy as np
 import shutil
-from loguru import logger
+
 from typing import List
 
 
@@ -66,8 +66,8 @@ def create_train_test_sets(
     # split the list into train and test
     train_filenames, test_filenames = train_test_split(all_filenames, test_ratio)
 
-    logger.info("Total images found: ", len(all_filenames))
-    logger.info(
+    print("Total images found: ", len(all_filenames))
+    print(
         f"Will be split using ratio {test_ratio} into \n\t{len(train_filenames)} train and \n\t{len(test_filenames)} test images\n"
     )
 
@@ -79,3 +79,112 @@ def create_train_test_sets(
         shutil.copy(name, target_path / "train" / class_name / name.name)
     for name in test_filenames:
         shutil.copy(name, target_path / "test" / class_name / name.name)
+
+
+char_id_to_class_name = OrderedDict(
+    {
+        0: "0",
+        1: "1",
+        2: "2",
+        3: "3",
+        4: "4",
+        5: "5",
+        6: "6",
+        7: "7",
+        8: "8",
+        9: "9",
+        10: "a",
+        11: "b",
+        12: "c",
+        13: "d",
+        14: "e",
+        15: "f",
+        16: "g",
+        17: "h",
+        18: "i",
+        19: "j",
+        20: "k",
+        21: "l",
+        22: "m",
+        23: "n",
+        24: "o",
+        25: "p",
+        26: "q",
+        27: "r",
+        28: "s",
+        29: "t",
+        30: "u",
+        31: "v",
+        32: "w",
+        33: "x",
+        34: "y",
+        35: "z",
+        36: "A",
+        37: "B",
+        38: "C",
+        39: "D",
+        40: "E",
+        41: "F",
+        42: "G",
+        43: "H",
+        44: "I",
+        45: "J",
+        46: "K",
+        47: "L",
+        48: "M",
+        49: "N",
+        50: "O",
+        51: "P",
+        52: "Q",
+        53: "R",
+        54: "S",
+        55: "T",
+        56: "U",
+        57: "V",
+        58: "W",
+        59: "X",
+        60: "Y",
+        61: "Z",
+        # then lowercase letters of the Polish alphabet: ą, ć, ę, ł, ń, ó, ś, ź, ż
+        62: "ą",
+        63: "ć",
+        64: "ę",
+        65: "ł",
+        66: "ń",
+        67: "ó",
+        68: "ś",
+        69: "ź",
+        70: "ż",
+        # then uppercase letters of the Polish alphabet: Ą, Ć, Ę, Ł, Ń, Ó, Ś, Ź, Ż
+        71: "Ą",
+        72: "Ć",
+        73: "Ę",
+        74: "Ł",
+        75: "Ń",
+        76: "Ó",
+        77: "Ś",
+        78: "Ź",
+        79: "Ż",
+        # then special characters: + - : ; $ ! ? @
+        80: "+",
+        81: "-",
+        82: ":",
+        83: ";",
+        84: "$",
+        85: "!",
+        86: "?",
+        87: "@",
+        88: ".",
+    }
+)
+
+
+def persist_labels(output_path: pathlib.Path):
+    """
+    Writes class labels to a .npy file as a numpy array
+    """
+    class_labels = list(char_id_to_class_name.values())
+    output_name = str(output_path / "labels.npy")
+    print(f"Writing class labels to {output_name}")
+    np.save(output_name, class_labels)
+    return output_name

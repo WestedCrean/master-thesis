@@ -3,7 +3,7 @@ import os
 import numpy as np
 import shutil
 import random
-from loguru import logger
+
 
 from .utils import create_train_test_sets
 
@@ -23,14 +23,14 @@ def create_uppercase_latin_letters_dataset():
     test_ratio = 0.1
 
     for i in classes_dir:
-        logger.info("Creating train & test set for class: {}".format(i))
+        print("Creating train & test set for class: {}".format(i))
         create_train_test_sets(
             current_path / "../../data/all_characters" / i,
             target_path,
             class_name=i,
             test_ratio=test_ratio,
         )
-    logger.info("Done")
+    print("Done")
 
 
 if __name__ == "__main__":

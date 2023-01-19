@@ -4,7 +4,7 @@ from random import shuffle
 
 import pathlib
 import numpy as np
-from loguru import logger
+
 import wandb
 
 # add the parent directory to the path

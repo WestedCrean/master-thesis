@@ -56,20 +56,42 @@ def delete_artifacts():
 
 
 @cli.command()
+@click.option("--all", is_flag=True)
 @click.option(
     "--label-type",
-    type=click.Choice(["lowercase", "phcd_paper"]),
+    type=click.Choice(
+        [
+            "numbers",
+            "lowercase",
+            "lowercase_no_diacritics",
+            "uppercase",
+            "uppercase_no_diacritics",
+            "phcd_paper",
+        ]
+    ),
     default="lowercase",
 )
-def create_training_data(label_type: str):
+def create_training_data(label_type: str, all: bool):
     """
     Uploads raw data & splits for training to wandb
     master_thesis project
     """
     print("Creating training data...")
-    print(f"Using label type: {label_type}")
-    upload_raw_dataset(label_type=Labels[label_type])
-    upload_dataset_splits()
+
+    labels_to_process = [label_type]
+    if all:
+        labels_to_process = [
+            "numbers",
+            "lowercase",
+            "lowercase_no_diacritics",
+            "uppercase",
+            "uppercase_no_diacritics",
+            "phcd_paper",
+        ]
+    for label in labels_to_process:
+        print(f"Using label type: {label}")
+        upload_raw_dataset(label_type=Labels[label])
+        # upload_dataset_splits()
 
 
 if __name__ == "__main__":

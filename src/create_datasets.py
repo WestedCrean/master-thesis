@@ -1,5 +1,5 @@
 import click
-from loguru import logger
+
 from pathlib import Path
 
 from preprocessing import (
@@ -15,14 +15,14 @@ from preprocessing import (
 @click.command()
 def main():
     """Creates datasets"""
-    logger.info("Creating datasets...")
+    print("Creating datasets...")
 
     create_numbers_dataset()
-    #create_lowercase_latin_letters_dataset()
-    #create_lowercase_latin_letters_with_diacritics_dataset()
-    #create_latin_letters_dataset()
-    #create_latin_letters_with_diacritics_dataset()
-    #create_edge_case_dataset()
+    # create_lowercase_latin_letters_dataset()
+    # create_lowercase_latin_letters_with_diacritics_dataset()
+    # create_latin_letters_dataset()
+    # create_latin_letters_with_diacritics_dataset()
+    # create_edge_case_dataset()
 
 
 if __name__ == "__main__":
