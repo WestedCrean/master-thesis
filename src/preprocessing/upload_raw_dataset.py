@@ -12,6 +12,8 @@ from datasets.utils import persist_labels
 
 
 class Labels(enum.Enum):
+    numbers = [str(i) for i in range(0, 10)]
+    lowercase_no_diacritics = [str(i) for i in range(10, 36)]
     lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
     phcd_paper = [str(i) for i in range(0, 90)]
 
