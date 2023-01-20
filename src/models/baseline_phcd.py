@@ -139,7 +139,7 @@ def train(
         )
 
         # calculate model size on disk, flops and number of parameters
-        flops = wandb.run.summary["GFLOPs"]
+        flops = wandb.run.summary["GFLOPS"]
         disk_size = calculate_model_size_on_disk(f"./artifacts/{MODEL_NAME}.h5")
         num_parameters = calculate_model_num_parameters(model)
 

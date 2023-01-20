@@ -1,7 +1,7 @@
 import click
 import wandb
 from preprocessing.upload_raw_dataset import upload_raw_dataset, Labels
-from preprocessing.upload_dataset_splits import upload_dataset_splits
+from preprocessing.upload_dataset_splits import upload_dataset_splits, upload_tfds
 
 PROJECT_NAME = "master-thesis"
 
@@ -95,6 +95,7 @@ def create_training_data(label_type: str, all: bool):
         print(f"Using label type: {label}")
         upload_raw_dataset(label_type=Labels[label])
         upload_dataset_splits(label_type=Labels[label])
+        upload_tfds(label_type=Labels[label])
 
 
 if __name__ == "__main__":

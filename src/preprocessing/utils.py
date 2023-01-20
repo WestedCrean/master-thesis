@@ -12,7 +12,7 @@ class Labels(enum.Enum):
     lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
     uppercase_no_diacritics = [str(i) for i in range(36, 62)]
     uppercase = [str(i) for i in range(36, 62)] + [str(i) for i in range(71, 80)]
-    phcd_paper = [str(i) for i in range(0, 90)]  # all characters
+    phcd_paper = [str(i) for i in range(0, 89)]  # all characters
 
 
 def measure_folder_size(path: pathlib.Path) -> int:
@@ -46,6 +46,26 @@ def save_split_data(
         shutil.copy(path, output_path)
 
     return output_path  # shutil.make_archive(output_path, "gztar", output_path)
+
+
+def load_split_image_data(run, artifact_name) -> pathlib.Path:
+    """
+    Unpacks data from an artifact into a folder and returns the path to the folder.
+    """
+
+    artifact = run.use_artifact(f"master-thesis/{artifact_name}:latest")
+    artifact_dir = pathlib.Path(
+        f"./artifacts/{artifact.name.replace(':', '-')}"
+    ).resolve()
+    if not artifact_dir.exists():
+        artifact_dir = artifact.download()
+        artifact_dir = pathlib.Path(artifact_dir).resolve()
+        for split_file in artifact_dir.iterdir():
+            if split_file.name.endswith(".tar.gz"):
+                split = split_file.name.replace(".tar.gz", "")
+                shutil.unpack_archive(split_file, artifact_dir / split, format="gztar")
+
+    return [artifact_dir / split for split in ["train", "test", "val"]]
 
 
 def train_test_split(data: list, test_ratio: float = 0.2):

@@ -4,7 +4,7 @@ from random import shuffle
 
 import pathlib
 import numpy as np
-
+import tensorflow as tf
 import wandb
 
 # add the parent directory to the path
@@ -14,6 +14,7 @@ from preprocessing.utils import (
     measure_folder_size,
     create_archive,
     unpack_archive,
+    load_split_image_data,
     save_split_data,
     persist_labels,
     Labels,
@@ -65,6 +66,48 @@ def upload_dataset_splits(label_type: Labels = Labels.lowercase):
     print("Uploading split artifacts")
     run.log_artifact(split_artifact)
     run.finish()
+
+
+def upload_tfds(label_type: Labels = Labels.lowercase):
+    with wandb.init(project="master-thesis", job_type="data_split") as run:
+        split_paths = load_split_image_data(
+            run=run, artifact_name=f"{label_type.name}_splits"
+        )
+
+        ds_train = tf.keras.utils.image_dataset_from_directory(
+            split_paths[0],
+            image_size=(32, 32),
+            color_mode="grayscale",
+        )
+
+        ds_test = tf.keras.utils.image_dataset_from_directory(
+            split_paths[1],
+            image_size=(32, 32),
+            color_mode="grayscale",
+        )
+
+        ds_val = tf.keras.utils.image_dataset_from_directory(
+            split_paths[2],
+            image_size=(32, 32),
+            color_mode="grayscale",
+        )
+
+        # save datasets on disk then upload to wandb as artifacts
+
+        output_dir = pathlib.Path("./datasets").resolve()
+        output_dir.mkdir(exist_ok=True)
+
+        ds_train.save(str(output_dir / "train"), compression="GZIP")
+        ds_val.save(str(output_dir / "val"), compression="GZIP")
+        ds_test.save(str(output_dir / "test"), compression="GZIP")
+
+        artifact = wandb.Artifact(
+            f"{label_type.name}_splits_tfds",
+            type="dataset",
+            description="Dataset splits in tf.data.Dataset format",
+        )
+        artifact.add_dir(output_dir)
+        run.log_artifact(artifact)
 
 
 if __name__ == "__main__":

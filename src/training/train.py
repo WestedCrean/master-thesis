@@ -8,7 +8,7 @@ def evaluate_model(model, ds_test, model_name):
     """
     Evaluate model test loss, accuracy and other characteristics then log to wandb
     """
-    flops = wandb.run.summary["GFLOPs"]
+    flops = wandb.run.summary["GFLOPS"]
     disk_size = utils.calculate_model_size_on_disk(f"./artifacts/{model_name}.h5")
     num_parameters = utils.calculate_model_num_parameters(model)
 
