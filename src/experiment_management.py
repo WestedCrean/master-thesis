@@ -69,13 +69,16 @@ def delete_artifacts():
             "phcd_paper",
         ]
     ),
-    required=True,
+    required=False,
 )
 def create_training_data(label_type: str, all: bool):
     """
     Uploads raw data & splits for training to wandb
     master_thesis project
     """
+    if not label_type and not all:
+        print("Please specify label type or --all flag")
+        return
     print("Creating training data...")
 
     labels_to_process = [label_type]
@@ -91,7 +94,7 @@ def create_training_data(label_type: str, all: bool):
     for label in labels_to_process:
         print(f"Using label type: {label}")
         upload_raw_dataset(label_type=Labels[label])
-        # upload_dataset_splits()
+        upload_dataset_splits(label_type=Labels[label])
 
 
 if __name__ == "__main__":

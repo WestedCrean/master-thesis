@@ -1,22 +1,17 @@
 import os
 import sys
-import enum
 import pathlib
 import wandb
 
 # add the parent directory to the path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from preprocessing.utils import measure_folder_size, create_archive, persist_labels
-
-
-class Labels(enum.Enum):
-    numbers = [str(i) for i in range(0, 10)]
-    lowercase_no_diacritics = [str(i) for i in range(10, 36)]
-    lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
-    uppercase_no_diacritics = [str(i) for i in range(36, 62)]
-    uppercase = [str(i) for i in range(36, 62)] + [str(i) for i in range(71, 80)]
-    phcd_paper = [str(i) for i in range(0, 90)]
+from preprocessing.utils import (
+    measure_folder_size,
+    create_archive,
+    persist_labels,
+    Labels,
+)
 
 
 def upload_raw_dataset(label_type: Labels = Labels.lowercase):

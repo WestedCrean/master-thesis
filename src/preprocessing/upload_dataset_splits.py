@@ -16,27 +16,24 @@ from preprocessing.utils import (
     unpack_archive,
     save_split_data,
     persist_labels,
+    Labels,
 )
 
 
-def upload_dataset_splits():
+def upload_dataset_splits(label_type: Labels = Labels.lowercase):
     base_dir = pathlib.Path().resolve().parent
     run = wandb.init(project="master-thesis", job_type="data_split")
 
-    artifact = run.use_artifact("letters:latest")
+    dataset_name = label_type.name
+
+    artifact = run.use_artifact(f"{dataset_name}:latest")
     artifact_path = artifact.download()
-
-    splits_artifacts = {}
-
-    for split in ["train", "test", "val"]:
-        split_artifact = wandb.Artifact(
-            f"letters_{split}", type="dataset", description=f"Letters {split} dataset"
-        )
-        splits_artifacts[split] = split_artifact
 
     class_archive = [str(l) for l in pathlib.Path(artifact_path).iterdir()]
     print(f"Found {len(class_archive)} classes")
-    output_path = (pathlib.Path(artifact_path).parent / "splits").resolve()
+    output_path = (
+        pathlib.Path(artifact_path).parent / dataset_name / "splits"
+    ).resolve()
     for archive_path in class_archive:
         label = archive_path.replace(".tar.gz", "").split("/")[-1]
         file_path = pathlib.Path(archive_path).resolve()
@@ -54,9 +51,9 @@ def upload_dataset_splits():
 
     print(f"Output path: {output_path.resolve()}")
     split_artifact = wandb.Artifact(
-        f"letters_splits",
+        f"{dataset_name}_splits",
         type="transformed_data",
-        description=f"Letters dataset split into train, test and val",
+        description=f"{dataset_name.capitalize()} dataset split into train, test and val",
     )
 
     for split in ["train", "test", "val"]:

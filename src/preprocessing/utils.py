@@ -1,8 +1,18 @@
 import pathlib
 import numpy as np
+import enum
 import shutil
 from collections import OrderedDict
 from typing import List
+
+
+class Labels(enum.Enum):
+    numbers = [str(i) for i in range(0, 10)]
+    lowercase_no_diacritics = [str(i) for i in range(10, 36)]
+    lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
+    uppercase_no_diacritics = [str(i) for i in range(36, 62)]
+    uppercase = [str(i) for i in range(36, 62)] + [str(i) for i in range(71, 80)]
+    phcd_paper = [str(i) for i in range(0, 90)]  # all characters
 
 
 def measure_folder_size(path: pathlib.Path) -> int:
