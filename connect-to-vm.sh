@@ -1,0 +1,1 @@
+gcloud compute ssh --project master-thesis-374818 --zone us-west1-b deeplearning-2-vm -- -L 8080:localhost:8080
