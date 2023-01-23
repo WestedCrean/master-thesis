@@ -42,6 +42,7 @@ def upload_dataset_splits(label_type: Labels = Labels.lowercase):
         unpacked_output_path = (pathlib.Path(artifact_path).parent / "raw").resolve()
         file_paths = unpack_archive(file_path, unpacked_output_path / label)
         print(f"Found {len(file_paths)} files in archive")
+        np.shuffle(file_paths)
 
         for split, split_ratio in zip(["train", "test", "val"], [0.8, 0.1, 0.1]):
             # split data into train, test and val with 80%, 10% and 10% respectively
