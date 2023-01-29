@@ -16,3 +16,6 @@ artifacts
 */artifacts
 src/artifacts
 notebooks/artifacts
+notebooks/logs
+notebooks/logdir
+notebooks.ipynb_checkpoints
