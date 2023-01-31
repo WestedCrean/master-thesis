@@ -19,3 +19,6 @@ notebooks/artifacts
 notebooks/logs
 notebooks/logdir
 notebooks.ipynb_checkpoints
+notebooks/*.zip
+notebooks/*.h5
+notebooks/prune_summary
