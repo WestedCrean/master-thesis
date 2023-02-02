@@ -8,10 +8,10 @@ from typing import List
 
 class Labels(enum.Enum):
     numbers = [str(i) for i in range(0, 10)]
-    lowercase_no_diacritics = [str(i) for i in range(10, 36)]
     lowercase = [str(i) for i in range(10, 36)] + [str(i) for i in range(62, 71)]
     uppercase_no_diacritics = [str(i) for i in range(36, 62)]
     uppercase = [str(i) for i in range(36, 62)] + [str(i) for i in range(71, 80)]
+    uppercase_all = numbers + uppercase + [str(i) for i in range(80, 89)]
     phcd_paper = [str(i) for i in range(0, 89)]  # all characters
 
 

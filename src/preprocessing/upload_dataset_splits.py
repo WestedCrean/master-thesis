@@ -44,8 +44,8 @@ def upload_dataset_splits(label_type: Labels = Labels.lowercase):
         print(f"Found {len(file_paths)} files in archive")
         np.random.shuffle(file_paths)
 
-        for split, split_ratio in zip(["train", "test", "val"], [0.8, 0.1, 0.1]):
-            # split data into train, test and val with 80%, 10% and 10% respectively
+        for split, split_ratio in zip(["train", "test", "val"], [0.7, 0.1, 0.2]):
+            # split data into train, test and val with 70%, 10% and 20% respectively
             split_paths = file_paths[: int(len(file_paths) * split_ratio)]
             split_save_path = save_split_data(split_paths, output_path, label, split)
 

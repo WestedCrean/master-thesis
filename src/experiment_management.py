@@ -84,9 +84,7 @@ def create_training_data(label_type: str, all: bool):
     labels_to_process = [label_type]
     if all:
         labels_to_process = [
-            "numbers",
             "lowercase",
-            "lowercase_no_diacritics",
             "uppercase",
             "uppercase_no_diacritics",
             "phcd_paper",
