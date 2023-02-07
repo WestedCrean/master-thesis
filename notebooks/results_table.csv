@@ -1,0 +1,6 @@
+run_name,test acc,number of parameters (thousands),FLOPs (milions),compressed disk size [Mb],throughput [thousands of images / s]
+baseline-phcd-paper,0.8562028408050537,497.721,14.308,1.787,25.137
+architecture-1-phcd_paper,0.9679594039916992,13831.385,17.223,49.522,15.674
+architecture-2-phcd_paper,0.9489179253578186,1779.161,5.713,6.396,19.865
+architecture-4-phcd_paper,0.838846743106842,604.185,5.424,2.16,18.406
+architecture-7-phcd_paper,0.8599143028259277,200.601,1.401,0.714,25.101
